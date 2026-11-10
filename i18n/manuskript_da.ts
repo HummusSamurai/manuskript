@@ -1,287 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="da">
+<TS version="2.1" language="da_DK">
 <context>
-    <name>Export</name>
+    <name>BulkInfoManager</name>
     <message>
-        <location filename="../manuskript/exporter/manuskript/HTML.py" line="18"/>
-        <source>Basic HTML output using the Python module &apos;markdown&apos;.</source>
-        <translation>Grundlæggende HTML-output ved hjælp af Python-modulet &apos;markdown&apos;.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/HTML.py" line="19"/>
-        <source>Python module &apos;markdown&apos;.</source>
-        <translation>Python modul &apos;markdown&apos;.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/HTML.py" line="54"/>
-        <source>Markdown source</source>
-        <translation>Markdown kilde</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/HTML.py" line="55"/>
-        <source>HTML Source</source>
-        <translation>HTML kilde</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/HTML.py" line="59"/>
-        <source>HTML Output</source>
-        <translation>HTML-output</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/__init__.py" line="15"/>
-        <source>Default exporter, provides basic formats used by other exporters.</source>
-        <translation>Standardeksportør, giver grundlæggende formater, der bruges af andre eksportører.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/markdown.py" line="60"/>
-        <source>Preview with highlighter.</source>
-        <translation>Forhåndsvisning med highlighter.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/plainText.py" line="17"/>
-        <source>Plain text</source>
-        <translation>Simpel tekst</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/HTML.py" line="13"/>
-        <source>A little known format modestly used. You know, web sites for example.</source>
-        <translation>Et mindre kendt format, der sparsomt bruges. Du ved, hjemmesider for eksempel.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/PDF.py" line="18"/>
-        <source>Needs LaTeX to be installed.</source>
+        <location filename="../manuskript/ui/bulkInfoManager.py" line="69"/>
+        <source>Form</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/converters/pandocConverter.py" line="76"/>
-        <source>Error</source>
-        <translation>Fejl</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="96"/>
-        <source>Standalone document (not just a fragment)</source>
-        <translation>Enkeltstående dokument (ikke bare et brudstykke)</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="99"/>
-        <source>Include a table of contents.</source>
-        <translation>Indsæt en indholdsfortegnelse.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="102"/>
-        <source>Number of sections level to include in TOC: </source>
-        <translation>Antal afsnit, der skal med i indholdsfortegnelsen. </translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="106"/>
-        <source>Typographically correct output</source>
-        <translation>Typografisk korrekt output</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="109"/>
-        <source>Normalize the document (cleaner)</source>
+        <location filename="../manuskript/ui/bulkInfoManager.py" line="70"/>
+        <source>Affected Characters:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="111"/>
-        <source>Specify the base level for headers: </source>
-        <translation>Fastlæg grundniveauet for overskrifter: </translation>
+        <location filename="../manuskript/ui/bulkInfoManager.py" line="71"/>
+        <source>NONE</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="118"/>
-        <source>Use reference-style links instead of inline links</source>
-        <translation>Brug referencestil-links i stedet for inline-links</translation>
+        <location filename="../manuskript/ui/bulkInfoManager.py" line="72"/>
+        <source>Add entry to the list.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="120"/>
-        <source>Use ATX-style headers</source>
-        <translation>Brug ATX-overskrifter</translation>
+        <location filename="../manuskript/ui/bulkInfoManager.py" line="73"/>
+        <source>Remove entry from the list.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="122"/>
-        <source>Self-contained HTML files, with no dependencies</source>
-        <translation>Selvstændige HTML-filer, uden afhængigheder</translation>
+        <location filename="../manuskript/ui/bulkInfoManager.py" line="74"/>
+        <source>Adds all items to the selected characters.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="124"/>
-        <source>Use &lt;q&gt; tags for quotes in HTML</source>
-        <translation>Brug &lt;q&gt; tags til citater i HTML</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="131"/>
-        <source>LaTeX engine used to produce the PDF.</source>
-        <translation>LaTeX-maskine, som bruges til at lave PDFen.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="141"/>
-        <source>Paper size:</source>
-        <translation>Papirformat:</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="144"/>
-        <source>Font size:</source>
-        <translation>Skriftstørrelse:</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="147"/>
-        <source>Class:</source>
-        <translation>Klasse:</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="150"/>
-        <source>Line spacing:</source>
-        <translation>Linjeafstand:</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/outputFormats.py" line="10"/>
-        <source>Books that don&apos;t kill trees.</source>
-        <translation>Bøger, der ikke slår træer ihjel.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/outputFormats.py" line="21"/>
-        <source>OpenDocument format. Used by LibreOffice for example.</source>
-        <translation>OpenDocument format. Bruges af LibreOffice, for eksempel.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/outputFormats.py" line="32"/>
-        <source>Microsoft Office (.docx) document.</source>
-        <translation>Microsoft Office-dokument (.docx).</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/plainText.py" line="22"/>
-        <source>reStructuredText is a lightweight markup language.</source>
-        <translation>reStructuredText er et letvægts-markupsprog.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/markdown.py" line="14"/>
-        <source>Just like plain text, excepts adds markdown titles.
-                          Presupposes that texts are formatted in markdown.</source>
-        <translation>Ligesom almindelig tekst, tilføjer uddrag markdown-titler.
-                          Antager at teksten er markdown-formateret.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/plainText.py" line="18"/>
-        <source>Simplest export to plain text. Allows you to use your own markup not understood
-                  by Manuskript, for example &lt;a href=&apos;www.fountain.io&apos;&gt;Fountain&lt;/a&gt;.</source>
-        <translation>Den nemmeste exportering til almindelig tekst. Tillader dig at bruge din egen markup, som Manuskript
-ikke allerede kender, for eksempel &lt;a href=&apos;www.fountain.io&apos;&gt;Fountain&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/__init__.py" line="22"/>
-        <source>&lt;p&gt;A universal document converter. Can be used to convert Markdown to a wide range of other
-    formats.&lt;/p&gt;
-    &lt;p&gt;Website: &lt;a href=&quot;http://www.pandoc.org&quot;&gt;http://pandoc.org/&lt;/a&gt;&lt;/p&gt;
-    </source>
-        <translation>&lt;p&gt;En universal dokumentkonverter. Kan bruges til at konvertere Markdown til en bred vifte af andre
-formater.&lt;/p&gt;
-&lt;p&gt;Hjemmeside: &lt;a href=&quot;http://www.pandoc.org&quot;&gt;http://pandoc.org/&lt;/a&gt;&lt;/p&gt;
-    </translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/PDF.py" line="19"/>
-        <source>a valid LaTeX installation. Pandoc recommendations can be found on:
-                     &lt;a href=&quot;https://pandoc.org/installing.html&quot;&gt;pandoc.org/installing.html&lt;/a&gt;. If you want Unicode support, you need XeLaTeX.</source>
-        <translation>En valid LaTeX installation. Pandoc forslag kan findes på:
-&lt;a href=&quot;https://pandoc.org/installing.html&quot;&gt;pandoc.org/installing.html&lt;/a&gt;. Hvis du vil have Unicode-understøttelse, har du brug for XeLaTeX.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/plainText.py" line="10"/>
-        <source>Export to markdown, using pandoc. Allows more formatting options
-    than the basic manuskript exporter.</source>
-        <translation>Eksportér til markdown ved hjælp af pandoc. Tillader flere formateringsmuligheder
-end basis-eksporteringen.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/plainText.py" line="33"/>
-        <source>LaTeX is a word processor and document markup language used to create
-                                              beautiful documents.</source>
-        <translation>LaTeX er en tekstbehandler og et markupsprog, der bruges til at lave
-smukke dokumenter.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/plainText.py" line="45"/>
-        <source>The purpose of this format is to provide a way to exchange information
-                                              between outliners and Internet services that can be browsed or controlled
-                                              through an outliner.</source>
-        <translation>Formålet med dette format er, at give en måde hvorpå information kan udveksles
-mellem dispositionsredaktører og internettjenester, der kan gennemses og styres
-via en dispositionsredaktør.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="114"/>
-        <source>Disable YAML metadata block.
-Use that if you get YAML related error.</source>
-        <translation>Deaktivér YAML-metadatablok.
-Brug dette, hvis du får en YAML-relateret fejlmelding.</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="134"/>
-        <source>Convert to ePUB3</source>
-        <translation>Konvertér til ePUB3</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/plainText.py" line="51"/>
-        <source>Could not process regular expression: 
-{}</source>
-        <translation>Kunne ikke behandle regulært udtryk:
-{}</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/exporter/manuskript/plainText.py" line="71"/>
-        <source>Choose output fileâ¦</source>
-        <translation>Vælg fil til udskrivning</translation>
+        <location filename="../manuskript/ui/bulkInfoManager.py" line="75"/>
+        <source>Apply Changes</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ExportersManager</name>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="165"/>
         <source>Manage Exporters</source>
-        <translation>Administrér eksportører</translation>
+        <translation>Administrér eksports</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="21"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="169"/>
         <source>Manuskript</source>
         <translation>Manuskript</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="66"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="171"/>
         <source>Description</source>
         <translation>Beskrivelse</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="100"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="172"/>
         <source>Offers export to</source>
         <translation>Eksporterer til</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="184"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="173"/>
         <source>Status</source>
         <translation>Status</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="190"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="174"/>
         <source>Status:</source>
         <translation>Status:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="210"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="175"/>
         <source>Version:</source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="233"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="176"/>
         <source>Path:</source>
         <translation>Sti:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="258"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="177"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exportersManager_ui.ui" line="273"/>
+        <location filename="../manuskript/ui/exporters/exportersManager_ui.py" line="178"/>
         <source>{HelpText}</source>
         <translation>{Hjælpetekst}</translation>
     </message>
@@ -289,175 +95,75 @@ Brug dette, hvis du får en YAML-relateret fejlmelding.</translation>
 <context>
     <name>FrequencyAnalyzer</name>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="107"/>
         <source>Frequency Analyzer</source>
         <translation>Frekvensanalyse</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="24"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="112"/>
         <source>Word frequency</source>
         <translation>Ordfrekvens</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="37"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="108"/>
         <source>Settings</source>
         <translation>Indstillinger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="49"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="109"/>
         <source>Minimum size:</source>
         <translation>Minimumstørrelse:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="63"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="110"/>
         <source>Exclude words (comma separated):</source>
         <translation>Ekskludér ord (kommasepareret):</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="156"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="115"/>
         <source>Analyze</source>
         <translation>Analysér</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="107"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="116"/>
         <source>Phrase frequency</source>
         <translation>Frasefrekvens</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="115"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="113"/>
         <source>Number of words: from</source>
         <translation>Antal ord: fra</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/tools/frequency_ui.ui" line="129"/>
+        <location filename="../manuskript/ui/tools/frequency_ui.py" line="114"/>
         <source>to</source>
         <translation>til</translation>
     </message>
 </context>
 <context>
-    <name>Import</name>
+    <name>GenericListDialog</name>
     <message>
-        <location filename="../manuskript/importer/markdownImporter.py" line="175"/>
-        <source>Markdown import</source>
-        <translation>Markdown import</translation>
+        <location filename="../manuskript/ui/listDialog_ui.py" line="43"/>
+        <source>Title</source>
+        <translation>Titel</translation>
     </message>
     <message>
-        <location filename="../manuskript/importer/markdownImporter.py" line="179"/>
-        <source>&lt;b&gt;Info:&lt;/b&gt; A very simple
-                        parser that will go through a markdown document and
-                        create items for each titles.&lt;br/&gt;&amp;nbsp;</source>
-        <translation>&lt;b&gt;Info:&lt;/b&gt; En meget simpel
-parser, der løber gennem et markdown dokument og
-laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
+        <location filename="../manuskript/ui/listDialog_ui.py" line="44"/>
+        <source>Text</source>
+        <translation>Tekst</translation>
+    </message>
+</context>
+<context>
+    <name>ImageTooltip.manager</name>
+    <message>
+        <location filename="../manuskript/ui/views/MDEditView.py" line="619"/>
+        <source>The image path or URL is incomplete or malformed.</source>
+        <translation>Stien til billedet eller URL'en, er enten ufuldendt eller forkert.</translation>
     </message>
     <message>
-        <location filename="../manuskript/importer/folderImporter.py" line="96"/>
-        <source>Folder import</source>
-        <translation>Mappeimport</translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/folderImporter.py" line="100"/>
-        <source>&lt;p&gt;&lt;b&gt;Info:&lt;/b&gt; Imports a whole
-                        directory structure. Folders are added as folders, and
-                        plaintext documents within (you chose which ones by extension)
-                        are added as scene.&lt;/p&gt;
-                        &lt;p&gt;Only text files are supported (not images, binary or others).&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/folderImporter.py" line="107"/>
-        <source>Include only those extensions:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/folderImporter.py" line="107"/>
-        <source>Comma separated values</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/folderImporter.py" line="112"/>
-        <source>Sort items by name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/folderImporter.py" line="116"/>
-        <source>Import folder then files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/opmlImporter.py" line="64"/>
-        <source>OPML Import</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/opmlImporter.py" line="36"/>
-        <source>File open failed.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/opmlImporter.py" line="64"/>
-        <source>This does not appear to be a valid OPML file.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/pandocImporters.py" line="57"/>
-        <source>Pandoc import</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/pandocImporters.py" line="60"/>
-        <source>&lt;b&gt;Info:&lt;/b&gt; Manuskript can
-                        import from &lt;b&gt;markdown&lt;/b&gt; or &lt;b&gt;OPML&lt;/b&gt;. Pandoc will
-                        convert your document to either (see option below), and
-                        then it will be imported in manuskript. One or the other
-                        might give better result depending on your document.
-                        &lt;br/&gt;&amp;nbsp;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/pandocImporters.py" line="68"/>
-        <source>Import using:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/pandocImporters.py" line="72"/>
-        <source>Wrap lines:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/pandocImporters.py" line="72"/>
-        <source>&lt;p&gt;Should pandoc create
-                        cosmetic / non-semantic line-breaks?&lt;/p&gt;&lt;p&gt;
-                        &lt;b&gt;auto&lt;/b&gt;: wraps at 72 characters.&lt;br&gt;
-                        &lt;b&gt;none&lt;/b&gt;: no line wrap.&lt;br&gt;
-                        &lt;b&gt;preserve&lt;/b&gt;: tries to preserves line wrap from the
-                        original document.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/mindMapImporter.py" line="55"/>
-        <source>Mind Map Import</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/mindMapImporter.py" line="55"/>
-        <source>This does not appear to be a valid Mind Map file.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/mindMapImporter.py" line="70"/>
-        <source>Mind Map import</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/mindMapImporter.py" line="73"/>
-        <source>Import tip as:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/importer/mindMapImporter.py" line="89"/>
-        <source>Untitled</source>
-        <translation type="unfinished"></translation>
+        <location filename="../manuskript/ui/views/MDEditView.py" line="631"/>
+        <source>The protocol &quot;{}&quot; is not supported.</source>
+        <translation>Protokollen &quot;{}&quot; er ikke understøttet.</translation>
     </message>
 </context>
 <context>
@@ -465,2043 +171,1962 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/MDEditCompleter.py" line="73"/>
         <source>Insert reference</source>
-        <translation type="unfinished"></translation>
+        <translation>Indsæt reference</translation>
+    </message>
+</context>
+<context>
+    <name>MDEditView</name>
+    <message>
+        <location filename="../manuskript/ui/views/MDEditView.py" line="543"/>
+        <source>{} (CTRL+Click to open)</source>
+        <translation>{} (CTRL+klik for at åbne)</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1647"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1553"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="169"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1489"/>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="179"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1490"/>
         <source>Subtitle</source>
-        <translation type="unfinished"></translation>
+        <translation>Undertitel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="189"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1491"/>
         <source>Series</source>
-        <translation type="unfinished"></translation>
+        <translation>Serie</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="199"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1492"/>
         <source>Volume</source>
-        <translation type="unfinished"></translation>
+        <translation>Bind</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="226"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1493"/>
         <source>Genre</source>
-        <translation type="unfinished"></translation>
+        <translation>Genre</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="236"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1494"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Licens</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="249"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1495"/>
         <source>Author</source>
-        <translation type="unfinished"></translation>
+        <translation>Forfatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1656"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1551"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="277"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1497"/>
         <source>Email</source>
-        <translation type="unfinished"></translation>
+        <translation>Email</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1442"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1543"/>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="322"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1499"/>
         <source>Situation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Situation:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1357"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1539"/>
         <source>Summary:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsummering:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="345"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1502"/>
         <source>One sentence</source>
-        <translation type="unfinished"></translation>
+        <translation>En sætning</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1455"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1544"/>
         <source>One paragraph</source>
-        <translation type="unfinished"></translation>
+        <translation>Enkelt afsnit</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1460"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1545"/>
         <source>One page</source>
-        <translation type="unfinished"></translation>
+        <translation>En side</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1465"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1546"/>
         <source>Full</source>
-        <translation type="unfinished"></translation>
+        <translation>Hel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="420"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1507"/>
         <source>One sentence summary</source>
-        <translation type="unfinished"></translation>
+        <translation>En sætning opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="502"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1509"/>
         <source>One paragraph summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Enkeltafsnit opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="540"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1510"/>
         <source>Expand each sentence of your one paragraph summary to a paragraph</source>
-        <translation type="unfinished"></translation>
+        <translation>Udvid hver sætning i dit enkelafsnit til et nyt afsnit</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="565"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1511"/>
         <source>One page summary</source>
-        <translation type="unfinished"></translation>
+        <translation>En side opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="590"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1512"/>
         <source>Full summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Hel opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1094"/>
-        <source>Next</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="676"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1500"/>
         <source>What if...?</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvad nu hvis...?</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="688"/>
+        <location filename="../manuskript/ui/searchMenu.py" line="24"/>
         <source>Characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Karakterer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="713"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1514"/>
         <source>Names</source>
-        <translation type="unfinished"></translation>
+        <translation>Navne</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1607"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1548"/>
         <source>Filter</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtre</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1203"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1538"/>
         <source>Basic info</source>
-        <translation type="unfinished"></translation>
+        <translation>Grundinformation</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1222"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1534"/>
         <source>Importance</source>
-        <translation type="unfinished"></translation>
+        <translation>Vigtighed</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="880"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1519"/>
         <source>Motivation</source>
-        <translation type="unfinished"></translation>
+        <translation>Motivation</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="890"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1520"/>
         <source>Goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="900"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1521"/>
         <source>Conflict</source>
-        <translation type="unfinished"></translation>
+        <translation>Konflikt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="910"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1522"/>
         <source>Epiphany</source>
-        <translation type="unfinished"></translation>
+        <translation>Åbenbaring</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="920"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1523"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;One sentence&lt;br/&gt;summary&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;En sætning&lt;br/&gt;opsummering&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="930"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1524"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;One paragraph&lt;br/&gt;summary&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Enkelt afsnit&lt;br/&gt;opsummering&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1021"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1527"/>
         <source>Notes</source>
-        <translation type="unfinished"></translation>
+        <translation>Noter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1031"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1529"/>
         <source>Detailed info</source>
-        <translation type="unfinished"></translation>
+        <translation>Detaljeret information</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2041"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1562"/>
         <source>Plots</source>
-        <translation type="unfinished"></translation>
+        <translation>Plotter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1212"/>
+        <location filename="../manuskript/ui/searchMenu.py" line="27"/>
         <source>Plot</source>
-        <translation type="unfinished"></translation>
+        <translation>Plot</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1229"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1535"/>
         <source>Character(s)</source>
-        <translation type="unfinished"></translation>
+        <translation>Karakter(er)</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1666"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1552"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Beskrivelse</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1243"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1537"/>
         <source>Result</source>
-        <translation type="unfinished"></translation>
+        <translation>Resultat</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1335"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1542"/>
         <source>Resolution steps</source>
-        <translation type="unfinished"></translation>
+        <translation>Udviklingstrin</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2065"/>
+        <location filename="../manuskript/ui/searchMenu.py" line="26"/>
         <source>World</source>
-        <translation type="unfinished"></translation>
+        <translation>Verden</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1620"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1550"/>
         <source>Populates with empty data</source>
-        <translation type="unfinished"></translation>
+        <translation>Udfyldes med tomme data</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1677"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1556"/>
         <source>More</source>
-        <translation type="unfinished"></translation>
+        <translation>Mere</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1686"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1554"/>
         <source>Source of passion</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilde til lidenskab</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1696"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1555"/>
         <source>Source of conflict</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilde til konflikt</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1554"/>
+        <location filename="../manuskript/ui/searchMenu.py" line="23"/>
         <source>Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Disposition</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1874"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1559"/>
         <source>Editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Redaktør</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2005"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1566"/>
         <source>Debug</source>
-        <translation type="unfinished"></translation>
+        <translation>Fejlfind</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2018"/>
+        <location filename="../manuskript/ui/searchMenu.py" line="25"/>
         <source>FlatData</source>
-        <translation type="unfinished"></translation>
+        <translation>FladData</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2028"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1561"/>
         <source>Persos</source>
-        <translation type="unfinished"></translation>
+        <translation>Personer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2089"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1565"/>
         <source>Labels</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiketter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2123"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1567"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fil</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2127"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1568"/>
         <source>&amp;Recent</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Seneste</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2147"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1569"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hjælp</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2158"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1570"/>
         <source>&amp;Tools</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Værktøjer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2165"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1571"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rediger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2221"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1574"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vis</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2225"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1575"/>
         <source>&amp;Mode</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Indstilling</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2254"/>
-        <source>&amp;Cheat sheet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2288"/>
-        <source>Sea&amp;rch</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2325"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1580"/>
         <source>&amp;Navigation</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Navigation</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2360"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1581"/>
         <source>&amp;Open</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Åben</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2363"/>
-        <source>Ctrl+O</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2372"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1582"/>
         <source>&amp;Save</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Gem</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2375"/>
-        <source>Ctrl+S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2384"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1583"/>
         <source>Sa&amp;ve as...</source>
-        <translation type="unfinished"></translation>
+        <translation>G&amp;em som...</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2387"/>
-        <source>Ctrl+Shift+S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2396"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1584"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Afslut</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2399"/>
-        <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2414"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1585"/>
         <source>&amp;Show help texts</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vis hjælpetekst</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2417"/>
-        <source>Ctrl+Shift+B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2432"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1586"/>
         <source>&amp;Spellcheck</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Stavekontrol</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2435"/>
-        <source>F9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2444"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1587"/>
         <source>&amp;Labels...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Etiketter...</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2453"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1588"/>
         <source>&amp;Status...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Status...</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1552"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1589"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Træ</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2469"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1590"/>
         <source>&amp;Simple</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Enkel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2477"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1591"/>
         <source>&amp;Fiction</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fiktion</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1553"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1592"/>
         <source>Index cards</source>
-        <translation type="unfinished"></translation>
+        <translation>Indekskort</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2496"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1594"/>
         <source>S&amp;ettings</source>
-        <translation type="unfinished"></translation>
+        <translation>I&amp;ndstillinger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2499"/>
-        <source>F8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2508"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1595"/>
         <source>&amp;Close project</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Afslut projekt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2517"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1596"/>
         <source>Co&amp;mpile</source>
-        <translation type="unfinished"></translation>
+        <translation>Ko&amp;mpiler</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2520"/>
-        <source>F6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2525"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1597"/>
         <source>&amp;Frequency Analyzer</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Frekvensanalyse</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="154"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1488"/>
         <source>Book information</source>
-        <translation type="unfinished"></translation>
+        <translation>Om bogen</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2534"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1598"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Om</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2537"/>
+        <location filename="../manuskript/ui/mainWindow.py" line="1599"/>
         <source>About Manuskript</source>
-        <translation type="unfinished"></translation>
+        <translation>Om Manuskript</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="746"/>
+        <location filename="../manuskript/mainWindow.py" line="1085"/>
         <source>Manuskript</source>
-        <translation type="unfinished"></translation>
+        <translation>Manuskript</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="872"/>
+        <location filename="../manuskript/mainWindow.py" line="1217"/>
         <source>Project {} saved.</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekt {} gemt.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="876"/>
+        <location filename="../manuskript/mainWindow.py" line="1221"/>
         <source>WARNING: Project {} not saved.</source>
-        <translation type="unfinished"></translation>
+        <translation>ADVARSEL: Projekt {} ikke gemt.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="896"/>
+        <location filename="../manuskript/mainWindow.py" line="1240"/>
         <source>Project {} loaded.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prokect {} indlæst.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="902"/>
+        <location filename="../manuskript/mainWindow.py" line="1246"/>
         <source>Project {} loaded with some errors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekt {} indlæst med fejl.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1280"/>
+        <location filename="../manuskript/mainWindow.py" line="1622"/>
         <source> (~{} pages)</source>
-        <translation type="unfinished"></translation>
+        <translation> (~{} sider)</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1283"/>
+        <location filename="../manuskript/mainWindow.py" line="1625"/>
         <source>Words: {}{}</source>
-        <translation type="unfinished"></translation>
+        <translation>Ord: {}{}</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1291"/>
+        <location filename="../manuskript/mainWindow.py" line="1633"/>
         <source>Book summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsummering af bogen</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1292"/>
+        <location filename="../manuskript/mainWindow.py" line="1634"/>
         <source>Project tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekttræ</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1293"/>
+        <location filename="../manuskript/mainWindow.py" line="1635"/>
         <source>Metadata</source>
-        <translation type="unfinished"></translation>
+        <translation>Metadata</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1294"/>
+        <location filename="../manuskript/mainWindow.py" line="1636"/>
         <source>Story line</source>
-        <translation type="unfinished"></translation>
+        <translation>Skitse</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1359"/>
+        <location filename="../manuskript/mainWindow.py" line="1701"/>
         <source>Enter information about your book, and yourself.</source>
-        <translation type="unfinished"></translation>
+        <translation>Skriv om din bog og dig selv.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1362"/>
+        <location filename="../manuskript/mainWindow.py" line="1704"/>
         <source>The basic situation, in the form of a &apos;What if...?&apos; question. Ex: &apos;What if the most dangerous
                      evil wizard wasn&apos;t able to kill a baby?&apos; (Harry Potter)</source>
-        <translation type="unfinished"></translation>
+        <translation>Den grundlæggende situation, i form af  et 'Hvad nu hvis...?' spørgsmål. Eks: 'Hvad nu hvis selv den farligste af 
+                     onde troldmænd ikke ville være i stand til at dræbe et barn?' (Harry Potter)</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1367"/>
+        <location filename="../manuskript/mainWindow.py" line="1709"/>
         <source>Take time to think about a one sentence (~50 words) summary of your book. Then expand it to
                      a paragraph, then to a page, then to a full summary.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tag dig tid til at overveje en sætning (~50 ord) der opsummerer din bog. Udvid den herefter til 
+                     et afsnit, så til en side, og endelig til en hel opsummering.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1372"/>
+        <location filename="../manuskript/mainWindow.py" line="1714"/>
         <source>Create your characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Skab dine personer.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1375"/>
+        <location filename="../manuskript/mainWindow.py" line="1717"/>
         <source>Develop plots.</source>
-        <translation type="unfinished"></translation>
+        <translation>Udvikl plots.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1378"/>
+        <location filename="../manuskript/mainWindow.py" line="1720"/>
         <source>Build worlds.  Create hierarchy of broad categories down to specific details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Opbyg bogens verden.  Skab et hieraki fra omfattende miljøer til specifikke detaljer.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1381"/>
+        <location filename="../manuskript/mainWindow.py" line="1723"/>
         <source>Create the outline of your masterpiece.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lav en skitse af dit mesterværk.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1384"/>
+        <location filename="../manuskript/mainWindow.py" line="1726"/>
         <source>Write.</source>
-        <translation type="unfinished"></translation>
+        <translation>Skriv.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1387"/>
+        <location filename="../manuskript/mainWindow.py" line="1729"/>
         <source>Debug info. Sometimes useful.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fejlinformation, Nogle gange nyttigt.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1401"/>
+        <location filename="../manuskript/mainWindow.py" line="1743"/>
         <source>Dictionary</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordbog</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1544"/>
+        <location filename="../manuskript/mainWindow.py" line="1891"/>
         <source>Nothing</source>
-        <translation type="unfinished"></translation>
+        <translation>Intet</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1545"/>
+        <location filename="../manuskript/mainWindow.py" line="1892"/>
         <source>POV</source>
-        <translation type="unfinished"></translation>
+        <translation>POV</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1546"/>
+        <location filename="../manuskript/mainWindow.py" line="1893"/>
         <source>Label</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiket</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1547"/>
+        <location filename="../manuskript/mainWindow.py" line="1894"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Fremdrift</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1548"/>
+        <location filename="../manuskript/mainWindow.py" line="1895"/>
         <source>Compile</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompiler</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1571"/>
+        <location filename="../manuskript/mainWindow.py" line="1918"/>
         <source>Icon color</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonfarve</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1572"/>
+        <location filename="../manuskript/mainWindow.py" line="1919"/>
         <source>Text color</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekstfarve</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1573"/>
+        <location filename="../manuskript/mainWindow.py" line="1920"/>
         <source>Background color</source>
-        <translation type="unfinished"></translation>
+        <translation>Baggrundsfarve</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1564"/>
+        <location filename="../manuskript/mainWindow.py" line="1911"/>
         <source>Icon</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikon</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1565"/>
+        <location filename="../manuskript/mainWindow.py" line="1912"/>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1913"/>
+        <source>Background</source>
+        <translation>Baggrund</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1914"/>
+        <source>Border</source>
+        <translation>Grænse</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1915"/>
+        <source>Corner</source>
+        <translation>Hjørne</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1540"/>
+        <source>Add plot step</source>
+        <translation>Tilføj plottrin</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1601"/>
+        <source>&amp;Copy</source>
+        <translation>&amp;Kopier</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1602"/>
+        <source>C&amp;ut</source>
+        <translation>K&amp;lip</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1603"/>
+        <source>&amp;Paste</source>
+        <translation>&amp;Indsæt</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1605"/>
+        <source>Sp&amp;lit at cursor</source>
+        <translation>Op&amp;del ved markør</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1609"/>
+        <source>&amp;Move Up</source>
+        <translation>&amp;Flyt op</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1610"/>
+        <source>M&amp;ove Down</source>
+        <translation>F&amp;lyt ned</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1607"/>
+        <source>Dupl&amp;icate</source>
+        <translation>Dupl&amp;iker</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1608"/>
+        <source>&amp;Delete</source>
+        <translation>&amp;Slet</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1613"/>
+        <source>&amp;Rename</source>
+        <translation>&amp;Omdøb</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1576"/>
+        <source>Organi&amp;ze</source>
+        <translation>Organi&amp;ser</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1606"/>
+        <source>M&amp;erge</source>
+        <translation>Sammenf&amp;let</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1572"/>
+        <source>&amp;Format</source>
+        <translation>&amp;Formatter</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1573"/>
+        <source>&amp;Header</source>
+        <translation>&amp;Overskrift</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1614"/>
+        <source>&amp;Level 1 (setext)</source>
+        <translation>&amp;Niveau 1 (setext)</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1615"/>
+        <source>Level &amp;2</source>
+        <translation>Niveau &amp;2</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1616"/>
+        <source>Level &amp;1 (atx)</source>
+        <translation>Niveau &amp;1 (atx)</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1617"/>
+        <source>L&amp;evel 2</source>
+        <translation>N&amp;iveau 2</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1618"/>
+        <source>Level &amp;3</source>
+        <translation>Niveau &amp;3</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1619"/>
+        <source>Level &amp;4</source>
+        <translation>Niveau &amp;4</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1620"/>
+        <source>Level &amp;5</source>
+        <translation>Niveau &amp;5</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1621"/>
+        <source>Level &amp;6</source>
+        <translation>Niveau &amp;6</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1622"/>
+        <source>&amp;Bold</source>
+        <translation>&amp;Fed</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1623"/>
+        <source>&amp;Italic</source>
+        <translation>&amp;Kursiv</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1624"/>
+        <source>&amp;Strike</source>
+        <translation>&amp;Overstreget</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1625"/>
+        <source>&amp;Verbatim</source>
+        <translation>&amp;Ordret</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1626"/>
+        <source>Su&amp;perscript</source>
+        <translation>O&amp;verskrift</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1627"/>
+        <source>Subsc&amp;ript</source>
+        <translation>Overskrift &amp;2</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1628"/>
+        <source>Co&amp;mment block</source>
+        <translation>Ko&amp;mmentarblok</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1629"/>
+        <source>Clear &amp;formats</source>
+        <translation>Ryd &amp;formattering</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1630"/>
+        <source>&amp;Comment line(s)</source>
+        <translation>&amp;Kommentarlinje(r)</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1631"/>
+        <source>&amp;Ordered list</source>
+        <translation>&amp;Sorteret liste</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1632"/>
+        <source>&amp;Unordered list</source>
+        <translation>&amp;Usorteret liste</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1633"/>
+        <source>B&amp;lockquote</source>
+        <translation>B&amp;lockquote</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1541"/>
+        <source>Remove selected plot step(s)</source>
+        <translation>Fjern valgte plottrin</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="923"/>
+        <source>The file {} does not exist. Has it been moved or deleted?</source>
+        <translation>Filen {} findes ikke. Er den flyttet eller slettet?</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1757"/>
+        <source>Install {}{} to use spellcheck</source>
+        <translation>Installer {}{} for at anvende stavekontrol</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1799"/>
+        <source>{} has no installed dictionaries</source>
+        <translation>{} har ingen installeret ordbog</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1820"/>
+        <source>{}{} is not installed</source>
+        <translation>{}{} er ikke installeret</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1028"/>
+        <source>Save project?</source>
+        <translation>Gem projekt?</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1028"/>
+        <source>Save changes to project &quot;{}&quot; before closing?</source>
+        <translation>Gem ændringer til projekt &quot;{}&quot; før lukning?</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1028"/>
+        <source>Your changes will be lost if you don&apos;t save them.</source>
+        <translation>Dine ændringer går tabt, hvis du ikke gemmer dem.</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="2018"/>
+        <source>PyQt / Qt versions 5.11 and 5.12 are known to cause a crash which might result in a loss of data.</source>
+        <translation>PyQt / Qt version 5.11 og 5.12 er kendt for at gå ned, hvilket kan medføre tab af data.</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="2019"/>
+        <source>PyQt {} and Qt {} are in use.</source>
+        <translation>PyQt {} og Qt {} er i brug.</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="2025"/>
+        <source>Proceed with import at your own risk</source>
+        <translation>Fortsæt med import på eget ansvar</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1518"/>
+        <source>Allow POV</source>
+        <translation>Tillad POV</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1636"/>
+        <source>Search</source>
+        <translation>Søg</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1637"/>
+        <source>&amp;Technical Support</source>
+        <translation>&amp;Teknisk support</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1638"/>
+        <source>How to obtain technical support for Manuskript.</source>
+        <translation>Sådan får du teknisk support til Manuskript.</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1639"/>
+        <source>&amp;Locate log file...</source>
+        <translation>&amp;Find logfil...</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1640"/>
+        <source>Locate log file</source>
+        <translation>Find logfil</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1641"/>
+        <source>Locate the diagnostic log file used for this session.</source>
+        <translation>Find logfilen for denne session.</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1557"/>
+        <source>Sorry!</source>
+        <translation>Ærgeligt!</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1557"/>
+        <source>This session is not being logged.</source>
+        <translation>Sessionen bliver ikke logget.</translation>
     </message>
     <message>
         <location filename="../manuskript/mainWindow.py" line="1566"/>
-        <source>Background</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1567"/>
-        <source>Border</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1568"/>
-        <source>Corner</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1371"/>
-        <source>Add plot step</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2546"/>
-        <source>&amp;Importâ¦</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2549"/>
-        <source>F7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2558"/>
-        <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2561"/>
-        <source>Ctrl+C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2570"/>
-        <source>C&amp;ut</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2573"/>
-        <source>Ctrl+X</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2582"/>
-        <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2585"/>
-        <source>Ctrl+V</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2594"/>
-        <source>&amp;Splitâ¦</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2597"/>
-        <source>Ctrl+Shift+K</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2606"/>
-        <source>Sp&amp;lit at cursor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2609"/>
-        <source>Ctrl+K</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2621"/>
-        <source>Ctrl+M</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2824"/>
-        <source>Ctrl+D</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2642"/>
-        <source>Del</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2651"/>
-        <source>&amp;Move Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2654"/>
-        <source>Ctrl+Shift+Up</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2663"/>
-        <source>M&amp;ove Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2666"/>
-        <source>Ctrl+Shift+Down</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2630"/>
-        <source>Dupl&amp;icate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2639"/>
-        <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2675"/>
-        <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2678"/>
-        <source>F2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2235"/>
-        <source>Organi&amp;ze</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2618"/>
-        <source>M&amp;erge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2169"/>
-        <source>&amp;Format</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2177"/>
-        <source>&amp;Header</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2683"/>
-        <source>&amp;Level 1 (setext)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2686"/>
-        <source>Ctrl+Alt+1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2691"/>
-        <source>Level &amp;2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2694"/>
-        <source>Ctrl+Alt+2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2699"/>
-        <source>Level &amp;1 (atx)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2702"/>
-        <source>Ctrl+1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2707"/>
-        <source>L&amp;evel 2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2710"/>
-        <source>Ctrl+2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2715"/>
-        <source>Level &amp;3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2718"/>
-        <source>Ctrl+3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2723"/>
-        <source>Level &amp;4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2726"/>
-        <source>Ctrl+4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2731"/>
-        <source>Level &amp;5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2734"/>
-        <source>Ctrl+5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2739"/>
-        <source>Level &amp;6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2742"/>
-        <source>Ctrl+6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2751"/>
-        <source>&amp;Bold</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2754"/>
-        <source>Ctrl+B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2763"/>
-        <source>&amp;Italic</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2766"/>
-        <source>Ctrl+I</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2775"/>
-        <source>&amp;Strike</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2780"/>
-        <source>&amp;Verbatim</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2785"/>
-        <source>Su&amp;perscript</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2788"/>
-        <source>Ctrl++</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2793"/>
-        <source>Subsc&amp;ript</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2796"/>
-        <source>Ctrl+-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2801"/>
-        <source>Co&amp;mment block</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2804"/>
-        <source>Ctrl+Shift+C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2813"/>
-        <source>Clear &amp;formats</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2816"/>
-        <source>Ctrl+0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2821"/>
-        <source>&amp;Comment line(s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2829"/>
-        <source>&amp;Ordered list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2838"/>
-        <source>&amp;Unordered list</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2843"/>
-        <source>B&amp;lockquote</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="1388"/>
-        <source>Remove selected plot step(s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="594"/>
-        <source>The file {} does not exist. Has it been moved or deleted?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1415"/>
-        <source>Install {}{} to use spellcheck</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1457"/>
-        <source>{} has no installed dictionaries</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1478"/>
-        <source>{}{} is not installed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="689"/>
-        <source>Save project?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="689"/>
-        <source>Save changes to project &quot;{}&quot; before closing?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="689"/>
-        <source>Your changes will be lost if you don&apos;t save them.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1671"/>
-        <source>PyQt / Qt versions 5.11 and 5.12 are known to cause a crash which might result in a loss of data.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1672"/>
-        <source>PyQt {} and Qt {} are in use.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1678"/>
-        <source>Proceed with import at your own risk</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="862"/>
-        <source>Allow POV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2852"/>
-        <source>Search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2855"/>
-        <source>Ctrl+F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2860"/>
-        <source>&amp;Technical Support</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2863"/>
-        <source>How to obtain technical support for Manuskript.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2866"/>
-        <source>F1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2871"/>
-        <source>&amp;Locate log file...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2874"/>
-        <source>Locate log file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2877"/>
-        <source>Locate the diagnostic log file used for this session.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/mainWindow.ui" line="2880"/>
-        <source>Shift+F1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1193"/>
-        <source>Sorry!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1193"/>
-        <source>This session is not being logged.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/mainWindow.py" line="1202"/>
         <source>A log file is a Work in Progress!</source>
-        <translation type="unfinished"></translation>
+        <translation>En logfil er under udarbejdelse!</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1202"/>
+        <location filename="../manuskript/mainWindow.py" line="1566"/>
         <source>The log file &quot;{}&quot; will continue to be written to until Manuskript is closed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Der bliver skrevet til logfilen &quot;{}&quot; indtil Manuskript afsluttes.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1202"/>
+        <location filename="../manuskript/mainWindow.py" line="1566"/>
         <source>It will now be displayed in your file manager, but is of limited use until you close Manuskript.</source>
-        <translation type="unfinished"></translation>
+        <translation>Den vil nu blive vist i din filhåndtering, men er af begrænset brug, indtil du lukker Manuskript.</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1218"/>
+        <location filename="../manuskript/mainWindow.py" line="1582"/>
         <source>Error!</source>
-        <translation type="unfinished"></translation>
+        <translation>Fejl!</translation>
     </message>
     <message>
-        <location filename="../manuskript/mainWindow.py" line="1218"/>
+        <location filename="../manuskript/mainWindow.py" line="1582"/>
         <source>An error was encountered while trying to show the log file below in your file manager.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/search.py" line="45"/>
-        <source>F3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/search.py" line="46"/>
-        <source>Shift+F3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/search.py" line="50"/>
-        <source>Situation</source>
-        <translation type="unfinished"></translation>
+        <translation>Der opstod en fejl under forsøget på at vise logfilen nedenfor i din filhåndtering.</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/search.py" line="51"/>
+        <source>F3</source>
+        <translation>F3</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/search.py" line="52"/>
+        <source>Shift+F3</source>
+        <translation>Skift+F3</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/search.py" line="56"/>
+        <source>Situation</source>
+        <translation>Situation</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/search.py" line="57"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1578"/>
+        <source>Cheat Sheet</source>
+        <translation>Snydeark</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1600"/>
+        <source>&amp;Import…</source>
+        <translation>&amp;Importer…</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1604"/>
+        <source>&amp;Split…</source>
+        <translation>&amp;Del…</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1634"/>
+        <source>&amp;Targets</source>
+        <translation>&amp;Mål</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1635"/>
+        <source>Draft and session word count targets</source>
+        <translation>Draft og session ordantal mål</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="385"/>
+        <source>Value</source>
+        <translation>Værdi</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="393"/>
+        <source>Bulk Info Manager</source>
+        <translation>Masseinformationsbestyrer</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="438"/>
+        <source>No Entries!</source>
+        <translation>Ingen påtegninger!</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="438"/>
+        <source>Please add entries to apply to the selected characters.</source>
+        <translation>Vær venlig at tilføje noter til de valgte personer.</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="449"/>
+        <source>Bulk Info Applied</source>
+        <translation>Oplysninger tilføjet</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="449"/>
+        <source>The bulk info has been applied to the selected characters.</source>
+        <translation>Oplysningerne er tilføjet til de valgte personer.</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="521"/>
+        <source>Un-applied data!</source>
+        <translation>Ikke-tilføjede data!</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="521"/>
+        <source>There are un-applied entries in this tab. Discard them?</source>
+        <translation>Der er ikke-anvendte poster i denne fane. Vil du kassere dem?</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1577"/>
+        <source>&amp;Navigate</source>
+        <translation>&amp;Naviger</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1611"/>
+        <source>Go &amp;back</source>
+        <translation>Gå til&amp;bage</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/mainWindow.py" line="1612"/>
+        <source>Go &amp;forward</source>
+        <translation>Gå &amp;frem</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/mainWindow.py" line="1251"/>
+        <source>Loading project {} failed.</source>
+        <translation>Indlæsning af projkt {} mislykkedes.</translation>
     </message>
 </context>
 <context>
     <name>Search</name>
     <message>
-        <location filename="../manuskript/ui/search.py" line="40"/>
+        <location filename="../manuskript/ui/search.py" line="46"/>
         <source>No results found</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen resultater fundet</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1837"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstillinger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="24"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1841"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="526"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1873"/>
         <source>Revisions</source>
-        <translation type="unfinished"></translation>
+        <translation>Revisioner</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="34"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1845"/>
         <source>Views</source>
-        <translation type="unfinished"></translation>
+        <translation>Views</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2891"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2035"/>
         <source>Labels</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiketter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3023"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2036"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3097"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2037"/>
         <source>Fullscreen</source>
-        <translation type="unfinished"></translation>
+        <translation>Helskærm</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="82"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1855"/>
         <source>General settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelle indstillinger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="98"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1856"/>
         <source>Application settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Applicationsindstilliger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="247"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1863"/>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Indlæser</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="259"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1864"/>
         <source>Automatically load last project on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Indlæs automatisk seneste projekt ved opstart</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="278"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1865"/>
         <source>Saving</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemmer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="292"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1866"/>
         <source>Automatically save every</source>
-        <translation type="unfinished"></translation>
+        <translation>Gem automatisk hver(t)</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="339"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1867"/>
         <source>minutes.</source>
-        <translation type="unfinished"></translation>
+        <translation>minut.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="375"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1868"/>
         <source>If no changes during</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis ingen ændringer i løbet af</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="422"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1869"/>
         <source>seconds.</source>
-        <translation type="unfinished"></translation>
+        <translation>sekunder.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="456"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1870"/>
         <source>Save on project close</source>
-        <translation type="unfinished"></translation>
+        <translation>Gem ved projektlukning</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="472"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1871"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;If you check this option, your project will be saved as one single file. Easier to copy or backup, but does not allow collaborative editing, or versioning.&lt;br/&gt;If this is unchecked, your project will be saved as a folder containing many small files.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hvis du markerer dette valg, vil di projekt blive gemt i en fil. Lettere at kopiere eller backe up, men tillader ikke fælles redigering eller versionering.&lt;br/&gt;Hvis dette valg ikke er sat, vil projektet blive gemt som en folder, med mange filer.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="478"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1872"/>
         <source>Save to one single file</source>
-        <translation type="unfinished"></translation>
+        <translation>Gem i en fil</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="536"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1874"/>
         <source>Revisions are a way to keep track of modifications. For each text item, it stores any changes you make to the main text, allowing you to see and restoring previous versions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Revisioner er en måde at holde styr på ændringer på. For hvert tekstelement gemmes eventuelle ændringer, du foretager i hovedteksten, så du har mulighed for at se og gendanne tidligere versioner.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="546"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1875"/>
         <source>Keep revisions</source>
-        <translation type="unfinished"></translation>
+        <translation>Behold revisioner</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="562"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1876"/>
         <source>S&amp;mart remove</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;mart slet</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="577"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1877"/>
         <source>Keep:</source>
-        <translation type="unfinished"></translation>
+        <translation>Behold:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="590"/>
-        <source>Smart remove allows you to keep only a certain number of revisions. It is strongly recommended to use it, lest you file will becomes full of thousands of insignificant changes.</source>
-        <translation type="unfinished"></translation>
+        <location filename="../manuskript/ui/settings_ui.py" line="1878"/>
+        <source>Smart remove allows you to keep only a certain number of revisions. It is strongly recommended to use it, lest your files would be bloated with thousands of insignificant changes.</source>
+        <translation>Smart fjernelse giver dig mulighed for kun at beholde et vist antal revisioner. Det anbefales kraftigt at bruge denne funktion, så dine filer ikke bliver fyldt op med tusindvis af ubetydelige ændringer.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="606"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1879"/>
         <source>revisions per day for the last month</source>
-        <translation type="unfinished"></translation>
+        <translation>revisioner pr dag for den seneste måned</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="647"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1880"/>
         <source>revisions per minute for the last 10 minutes</source>
-        <translation type="unfinished"></translation>
+        <translation>revisioner pr minut for de seneste 10 minutter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="660"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1881"/>
         <source>revisions per hour for the last day</source>
-        <translation type="unfinished"></translation>
+        <translation>revisioner pr time for den seneste dag</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="673"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1882"/>
         <source>revisions per 10 minutes for the last hour</source>
-        <translation type="unfinished"></translation>
+        <translation>revisioner pr 10 minutter for den seneste time</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="798"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1883"/>
         <source>revisions per week till the end of time</source>
-        <translation type="unfinished"></translation>
+        <translation>revisioner pr uge til nu</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="856"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1885"/>
         <source>Views settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Views indstillinger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="874"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1922"/>
         <source>Tree</source>
-        <translation type="unfinished"></translation>
+        <translation>Træ</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2145"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1990"/>
         <source>Colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Farver</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1889"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1959"/>
         <source>Icon color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikon farve:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2095"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1984"/>
         <source>Nothing</source>
-        <translation type="unfinished"></translation>
+        <translation>Intet</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2100"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1985"/>
         <source>POV</source>
-        <translation type="unfinished"></translation>
+        <translation>POV</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2105"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1986"/>
         <source>Label</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiket</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2110"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1987"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Fremdrift</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2115"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1988"/>
         <source>Compile</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompiler</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1937"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2097"/>
         <source>Text color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekstfarve:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1985"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2098"/>
         <source>Background color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Baggrundsfarve:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1168"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1909"/>
         <source>Folders</source>
-        <translation type="unfinished"></translation>
+        <translation>Foldere</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1180"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1910"/>
         <source>Show ite&amp;m count</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis ele&amp;mentantal</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1315"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1920"/>
         <source>Show summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1245"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1915"/>
         <source>&amp;Nothing</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Intet</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1264"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1916"/>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1382"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1951"/>
         <source>Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Skitse</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1574"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1942"/>
         <source>Visible columns</source>
-        <translation type="unfinished"></translation>
+        <translation>Synlige kolonner</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1586"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1943"/>
         <source>Goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1602"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1944"/>
         <source>Word count</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordtælling</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1618"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1945"/>
         <source>Percentage</source>
-        <translation type="unfinished"></translation>
+        <translation>Procentdel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1698"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1950"/>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1729"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1989"/>
         <source>Index cards</source>
-        <translation type="unfinished"></translation>
+        <translation>Indexkort</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1874"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1958"/>
         <source>Item colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Elementfarver</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2033"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2099"/>
         <source>Border color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kantfarve:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2081"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1983"/>
         <source>Corner color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjørnefarve:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1741"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1952"/>
         <source>Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Baggrund</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3576"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2073"/>
         <source>Color:</source>
-        <translation type="unfinished"></translation>
+        <translation>Farve:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2938"/>
-        <source>Ctrl+S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3318"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2049"/>
         <source>Image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Billede:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2131"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2034"/>
         <source>Text editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Teksteditor</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2250"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1995"/>
         <source>Font</source>
-        <translation type="unfinished"></translation>
+        <translation>Font</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2262"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1996"/>
         <source>Family:</source>
-        <translation type="unfinished"></translation>
+        <translation>Familie:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3619"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2075"/>
         <source>Size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Størrelse:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3633"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2076"/>
         <source>Misspelled:</source>
-        <translation type="unfinished"></translation>
+        <translation>Forkert stavet:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2157"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1991"/>
         <source>Background:</source>
-        <translation type="unfinished"></translation>
+        <translation>Baggrund:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2473"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2006"/>
         <source>Paragraphs</source>
-        <translation type="unfinished"></translation>
+        <translation>Afsnit</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3660"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2077"/>
         <source>Line spacing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Linjeafstand:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3668"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2078"/>
         <source>Single</source>
-        <translation type="unfinished"></translation>
+        <translation>Enkelt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3673"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2079"/>
         <source>1.5 lines</source>
-        <translation type="unfinished"></translation>
+        <translation>1.5 linje</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3678"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2080"/>
         <source>Double</source>
-        <translation type="unfinished"></translation>
+        <translation>Dobbel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3683"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2081"/>
         <source>Proportional</source>
-        <translation type="unfinished"></translation>
+        <translation>Proportionel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3700"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2082"/>
         <source>%</source>
-        <translation type="unfinished"></translation>
+        <translation>%</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3716"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2083"/>
         <source>Tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab bredde:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3780"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2087"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3802"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2088"/>
         <source>Indent 1st line</source>
-        <translation type="unfinished"></translation>
+        <translation>Indryk 1. linje</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3745"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2085"/>
         <source>Spacing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mellemrum:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3144"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2038"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3158"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2039"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Rediger</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3168"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2040"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Slet</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3212"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2041"/>
         <source>Theme name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Temanavn:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3228"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2042"/>
         <source>Apply</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilføj</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3241"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2043"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbryd</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3271"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2044"/>
         <source>Window Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Vinduebaggrund</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3276"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2045"/>
         <source>Text Background</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekstbaggrund</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3281"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2046"/>
         <source>Text Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekstmuligheder</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3286"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2047"/>
         <source>Paragraph Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Afsnitmuligheder</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3328"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2050"/>
         <source>Type:</source>
-        <translation type="unfinished"></translation>
+        <translation>Type:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3336"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2051"/>
         <source>No Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Intet billede</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3341"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2052"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>Gentaget</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3346"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2053"/>
         <source>Centered</source>
-        <translation type="unfinished"></translation>
+        <translation>Centreret</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3445"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2064"/>
         <source>Stretched</source>
-        <translation type="unfinished"></translation>
+        <translation>Strakt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3356"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2055"/>
         <source>Scaled</source>
-        <translation type="unfinished"></translation>
+        <translation>Skaleret</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3361"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2056"/>
         <source>Zoomed</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoomet</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3396"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2058"/>
         <source>Opacity:</source>
-        <translation type="unfinished"></translation>
+        <translation>Gennemsigtighed:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3422"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2060"/>
         <source>Position:</source>
-        <translation type="unfinished"></translation>
+        <translation>Position:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3810"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2089"/>
         <source>Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Venstre</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3819"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2090"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Centrer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3828"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2091"/>
         <source>Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Højre</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3453"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2065"/>
         <source>Width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bredde:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3504"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2068"/>
         <source>Corner radius:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hjørneradius:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3511"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2069"/>
         <source>Margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Margener:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3540"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2071"/>
         <source>Padding:</source>
-        <translation type="unfinished"></translation>
+        <translation>Marginering:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3596"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2074"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Font:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1833"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2094"/>
         <source>Style</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2750"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2024"/>
         <source>Cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Markør</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2762"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2025"/>
         <source>Use block insertion of</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug blokindrykning</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2485"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2007"/>
         <source>Alignment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Justering:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3837"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2092"/>
         <source>Justify</source>
-        <translation type="unfinished"></translation>
+        <translation>Juster</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="3849"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2093"/>
         <source>Alignment</source>
-        <translation type="unfinished"></translation>
+        <translation>Justering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1066"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1905"/>
         <source>Icon Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikonstørrelse</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1078"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1906"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Ledetekst</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2797"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2027"/>
         <source>Disable blinking</source>
-        <translation type="unfinished"></translation>
+        <translation>Slå blinkning fra</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2364"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1999"/>
         <source>Text area</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekstområde</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2376"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2000"/>
         <source>Max width</source>
-        <translation type="unfinished"></translation>
+        <translation>Max bredde</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2408"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2002"/>
         <source>Left/Right margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Venstre/Højre margener:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2437"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2004"/>
         <source>Top/Bottom margins:</source>
-        <translation type="unfinished"></translation>
+        <translation>Top/Bund margener:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1219"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1913"/>
         <source>S&amp;how progress</source>
-        <translation type="unfinished"></translation>
+        <translation>V&amp;is fremdrift</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1232"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1914"/>
         <source>Show summar&amp;y</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1302"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1919"/>
         <source>Show p&amp;rogress</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis fremdrift</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1845"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1956"/>
         <source>Old st&amp;yle</source>
-        <translation type="unfinished"></translation>
+        <translation>Gammel stil</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2189"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1992"/>
         <source>Transparent</source>
-        <translation type="unfinished"></translation>
+        <translation>Gennemsigtig</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2234"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1994"/>
         <source>Restore defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Gendan standard</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="138"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1858"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="161"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1859"/>
         <source>Language:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sprog:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="184"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1860"/>
         <source>Font size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skriftstørrelse:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="112"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1857"/>
         <source>Restarting Manuskript ensures all settings take effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Genstart af Manuskript sikrer at ændrede indstiller træder i kraft.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1193"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1911"/>
         <source>Show &amp;word count</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis antal ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1276"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1917"/>
         <source>&amp;Show word count</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis antal ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1858"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1957"/>
         <source>&amp;New style</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ny stil</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2810"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2028"/>
         <source>Typewriter mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrivemaskinetilstand</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2823"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2029"/>
         <source>Focus mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Fokustilstand</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2837"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2030"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2842"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2031"/>
         <source>Sentence</source>
-        <translation type="unfinished"></translation>
+        <translation>Sætning</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2847"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2032"/>
         <source>Line</source>
-        <translation type="unfinished"></translation>
+        <translation>Linje</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="2852"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="2033"/>
         <source>Paragraph</source>
-        <translation type="unfinished"></translation>
+        <translation>Afsnit</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="821"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1884"/>
         <source>&lt;p&gt;&lt;b&gt;The Revisions feature has been at the source of many reported issues. In this version of Manuskript it has been turned off by default for new projects in order to provide the best experience.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Why aren&apos;t these issues fixed already? &lt;a href=&quot;https://www.theologeek.ch/manuskript/contribute/&quot;&gt;We need your help to make Manuskript better!&lt;/a&gt;&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Revisionsfunktionen har været kilden til mange rapporterede problemer. I denne version af Manuskript er den som standard slået fra for nye projekter for at give den bedste oplevelse.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Hvorfor er disse problemer ikke løst endnu? &lt;a href=&quot;https://www.theologeek.ch/manuskript/contribute/&quot;&gt;Vi har brug for din hjælp til at gøre Manuskript bedre!&lt;/a&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="211"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1861"/>
         <source>Show progress in chars next
  to words</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis fremskridt med tegn ved
+siden af ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1113"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1907"/>
         <source>Char/Word Counter</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegn/Ord tæller</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1137"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1908"/>
         <source>Count spaces as chars</source>
-        <translation type="unfinished"></translation>
+        <translation>Tæl blanke som tegn</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1206"/>
+        <location filename="../manuskript/ui/settings_ui.py" line="1912"/>
         <source>Show char c&amp;ount</source>
+        <translation>Vis tegnantal</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/settings_ui.py" line="1918"/>
+        <source>Sho&amp;w char count</source>
+        <translation>Vis tegnantal</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/settings_ui.py" line="2095"/>
+        <source>Tooltips</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/settings_ui.ui" line="1289"/>
-        <source>Sho&amp;w char count</source>
+        <location filename="../manuskript/ui/settings_ui.py" line="2096"/>
+        <source>Use system defaults</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SpellAction</name>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="611"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="622"/>
         <source>Spelling Suggestions</source>
-        <translation type="unfinished"></translation>
+        <translation>Staveforslag</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="629"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="641"/>
         <source>&amp;Add to dictionary</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilføj til ordbog</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="682"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="694"/>
         <source>&amp;Remove from custom dictionary</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjern fra brugerordbog</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="538"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="549"/>
         <source>&amp;New Character</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ny Person</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="545"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="556"/>
         <source>&amp;New Plot Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nyt Plotelement</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="552"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="563"/>
         <source>&amp;New World Item</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nyt Miljøelement</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="653"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="665"/>
         <source>&amp;Correction Suggestions</source>
-        <translation type="unfinished"></translation>
+        <translation>Rettelsesforslag</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="662"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="674"/>
         <source>&amp;Correction Suggestion</source>
-        <translation type="unfinished"></translation>
+        <translation>Rettelsesforslag</translation>
     </message>
 </context>
 <context>
     <name>about</name>
     <message>
-        <location filename="../manuskript/ui/about_ui.ui" line="17"/>
+        <location filename="../manuskript/ui/about_ui.py" line="54"/>
         <source>About Manuskript</source>
-        <translation type="unfinished"></translation>
+        <translation>Om Manuskript</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/about_ui.ui" line="50"/>
+        <location filename="../manuskript/ui/about_ui.py" line="55"/>
         <source>Manuskript</source>
-        <translation type="unfinished"></translation>
+        <translation>Manuskript</translation>
     </message>
 </context>
 <context>
     <name>aboutDialog</name>
     <message>
-        <location filename="../manuskript/ui/about.py" line="28"/>
+        <location filename="../manuskript/ui/about.py" line="31"/>
         <source>Version</source>
-        <translation type="unfinished"></translation>
+        <translation>Version</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/about.py" line="41"/>
+        <location filename="../manuskript/ui/about.py" line="44"/>
         <source>Software Versions in Use:</source>
-        <translation type="unfinished"></translation>
+        <translation>Softwareversioner i brug:</translation>
     </message>
 </context>
 <context>
     <name>abstractModel</name>
     <message>
-        <location filename="../manuskript/models/abstractModel.py" line="199"/>
+        <location filename="../manuskript/models/abstractModel.py" line="215"/>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/abstractModel.py" line="201"/>
+        <location filename="../manuskript/models/abstractModel.py" line="217"/>
         <source>POV</source>
-        <translation type="unfinished"></translation>
+        <translation>POV</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/abstractModel.py" line="203"/>
+        <location filename="../manuskript/models/abstractModel.py" line="219"/>
         <source>Label</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiket</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/abstractModel.py" line="205"/>
+        <location filename="../manuskript/models/abstractModel.py" line="221"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/abstractModel.py" line="207"/>
+        <location filename="../manuskript/models/abstractModel.py" line="223"/>
         <source>Compile</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompiler</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/abstractModel.py" line="209"/>
+        <location filename="../manuskript/models/abstractModel.py" line="225"/>
         <source>Word count</source>
-        <translation type="unfinished"></translation>
+        <translation>Antal ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/abstractModel.py" line="211"/>
+        <location filename="../manuskript/models/abstractModel.py" line="227"/>
         <source>Goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål</translation>
     </message>
 </context>
 <context>
     <name>basicItemView</name>
     <message>
-        <location filename="../manuskript/ui/views/basicItemView_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/views/basicItemView_ui.py" line="65"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Form</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/basicItemView_ui.ui" line="38"/>
+        <location filename="../manuskript/ui/views/basicItemView_ui.py" line="66"/>
         <source>POV:</source>
-        <translation type="unfinished"></translation>
+        <translation>POV:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/basicItemView_ui.ui" line="55"/>
+        <location filename="../manuskript/ui/views/basicItemView_ui.py" line="67"/>
         <source>Goal:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/basicItemView_ui.ui" line="80"/>
+        <location filename="../manuskript/ui/views/basicItemView_ui.py" line="68"/>
         <source>Word count</source>
-        <translation type="unfinished"></translation>
+        <translation>Antal ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/basicItemView_ui.ui" line="92"/>
+        <location filename="../manuskript/ui/views/basicItemView_ui.py" line="69"/>
         <source>One line summary</source>
+        <translation>En linjes opsummering</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/basicItemView_ui.py" line="70"/>
+        <source>Few sentences summary:</source>
+        <translation>Få sætningers opsummering:</translation>
+    </message>
+</context>
+<context>
+    <name>characterInfoDialog</name>
+    <message>
+        <location filename="../manuskript/ui/characterInfoDialog.py" line="94"/>
+        <source>Add Character Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/basicItemView_ui.ui" line="99"/>
-        <source>Few sentences summary:</source>
+        <location filename="../manuskript/ui/characterInfoDialog.py" line="95"/>
+        <source>Value:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/characterInfoDialog.py" line="96"/>
+        <source>Name:</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>characterModel</name>
     <message>
-        <location filename="../manuskript/models/characterModel.py" line="205"/>
+        <location filename="../manuskript/models/characterModel.py" line="206"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/characterModel.py" line="207"/>
+        <location filename="../manuskript/models/characterModel.py" line="215"/>
         <source>Value</source>
-        <translation type="unfinished"></translation>
+        <translation>Værdi</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/models/characterModel.py" line="179"/>
+        <source>New character</source>
+        <translation>Ny person</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/models/characterModel.py" line="215"/>
+        <source>Description</source>
+        <translation>Beskrivelse</translation>
     </message>
 </context>
 <context>
     <name>characterTreeView</name>
     <message>
-        <location filename="../manuskript/ui/views/characterTreeView.py" line="32"/>
+        <location filename="../manuskript/ui/views/characterTreeView.py" line="33"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Primær</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/characterTreeView.py" line="32"/>
+        <location filename="../manuskript/ui/views/characterTreeView.py" line="33"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/characterTreeView.py" line="32"/>
+        <location filename="../manuskript/ui/views/characterTreeView.py" line="33"/>
         <source>Minor</source>
-        <translation type="unfinished"></translation>
+        <translation>Lav betydning</translation>
     </message>
 </context>
 <context>
     <name>cheatSheet</name>
     <message>
-        <location filename="../manuskript/ui/cheatSheet_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/cheatSheet_ui.py" line="89"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/cheatSheet_ui.ui" line="46"/>
+        <location filename="../manuskript/ui/cheatSheet_ui.py" line="90"/>
         <source>Filter (type the name of anything in your project)</source>
-        <translation type="unfinished"></translation>
+        <translation>Filtrer (indtast navnet på noget i dit projekt)</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/cheatSheet.py" line="113"/>
         <source>Minor</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/cheatSheet.py" line="113"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/cheatSheet.py" line="113"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/cheatSheet.py" line="91"/>
         <source>Characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Personer</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/cheatSheet.py" line="104"/>
         <source>Texts</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekster</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/cheatSheet.py" line="116"/>
         <source>Plots</source>
-        <translation type="unfinished"></translation>
+        <translation>Plotter</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/cheatSheet.py" line="120"/>
         <source>World</source>
-        <translation type="unfinished"></translation>
+        <translation>Miljø</translation>
     </message>
 </context>
 <context>
@@ -2509,27 +2134,27 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/cmbOutlineCharacterChoser.py" line="34"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Intet</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/cmbOutlineCharacterChoser.py" line="36"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/cmbOutlineCharacterChoser.py" line="36"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/cmbOutlineCharacterChoser.py" line="36"/>
         <source>Minor</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/cmbOutlineCharacterChoser.py" line="136"/>
         <source>Various</source>
-        <translation type="unfinished"></translation>
+        <translation>Forskellige</translation>
     </message>
 </context>
 <context>
@@ -2537,7 +2162,7 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/cmbOutlineLabelChoser.py" line="113"/>
         <source>Various</source>
-        <translation type="unfinished"></translation>
+        <translation>Forskellige</translation>
     </message>
 </context>
 <context>
@@ -2545,7 +2170,7 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/cmbOutlineStatusChoser.py" line="112"/>
         <source>Various</source>
-        <translation type="unfinished"></translation>
+        <translation>Forskellige</translation>
     </message>
 </context>
 <context>
@@ -2553,15 +2178,15 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/collapsibleDockWidgets.py" line="26"/>
         <source>Dock Widgets Toolbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Fastlås Toolbar</translation>
     </message>
 </context>
 <context>
     <name>completer</name>
     <message>
-        <location filename="../manuskript/ui/editors/completer_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/editors/completer_ui.py" line="34"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
 </context>
 <context>
@@ -2569,48 +2194,71 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/corkDelegate.py" line="70"/>
         <source>One line summary</source>
-        <translation type="unfinished"></translation>
+        <translation>En linje opsummering</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/corkDelegate.py" line="100"/>
         <source>Full summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Hel opsummering</translation>
+    </message>
+</context>
+<context>
+    <name>dlg</name>
+    <message>
+        <location filename="../manuskript/load_save/version_1.py" line="436"/>
+        <source>Files not saved</source>
+        <translation>Filer ikke gemt</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/load_save/version_1.py" line="437"/>
+        <source>The following files were not saved and appear to be open in another program</source>
+        <translation>Følgende filer blev ikke gemt, da de ser ud til at være åbne i et andet program</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/load_save/version_1.py" line="933"/>
+        <source>Files not loaded</source>
+        <translation>Filer ikke indlæst</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/load_save/version_1.py" line="934"/>
+        <source>The following files were not loaded and appear to be open in another program</source>
+        <translation>Følgende filer blev ikke gemt, da de ser ud til at være åbne i et andet program</translation>
     </message>
 </context>
 <context>
     <name>editorWidget_ui</name>
     <message>
-        <location filename="../manuskript/ui/editors/editorWidget_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/editors/editorWidget_ui.py" line="75"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
 </context>
 <context>
     <name>exporter</name>
     <message>
-        <location filename="../manuskript/ui/exporters/exporter_ui.ui" line="65"/>
+        <location filename="../manuskript/ui/exporters/exporter_ui.py" line="70"/>
         <source>Export</source>
-        <translation type="unfinished"></translation>
+        <translation>Eksporter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exporter_ui.ui" line="22"/>
+        <location filename="../manuskript/ui/exporters/exporter_ui.py" line="67"/>
         <source>Export to:</source>
-        <translation type="unfinished"></translation>
+        <translation>Eksporter til:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exporter_ui.ui" line="32"/>
+        <location filename="../manuskript/ui/exporters/exporter_ui.py" line="68"/>
         <source>Manage exporters</source>
-        <translation type="unfinished"></translation>
+        <translation>Administrer eksports</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exporter_ui.ui" line="103"/>
+        <location filename="../manuskript/ui/exporters/exporter_ui.py" line="72"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Forhåndsvisning</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/exporter_ui.ui" line="81"/>
+        <location filename="../manuskript/ui/exporters/exporter_ui.py" line="71"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstillinger</translation>
     </message>
 </context>
 <context>
@@ -2618,210 +2266,210 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/exporters/exporter.py" line="64"/>
         <source>{} (not implemented yet)</source>
-        <translation type="unfinished"></translation>
+        <translation>{} (ikke implementeret endnu)</translation>
     </message>
 </context>
 <context>
     <name>exporterSettings</name>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="512"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="50"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="527"/>
         <source>Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Indhold</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="56"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="513"/>
         <source>Decide here what will be included in the final export.</source>
-        <translation type="unfinished"></translation>
+        <translation>Beslut her hvad der skal medtages i den endelige eksport.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="85"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="515"/>
         <source>Type</source>
-        <translation type="unfinished"></translation>
+        <translation>Skriv</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="90"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="517"/>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings.py" line="326"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="519"/>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="118"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="520"/>
         <source>I need more granularity</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeg behøver flere detaljer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="127"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="521"/>
         <source>Fi&amp;lters</source>
-        <translation type="unfinished"></translation>
+        <translation>Fi&amp;ltre</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="142"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="522"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filters what items will be included in the final export.&lt;br/&gt;&lt;span style=&quot; color:#773333;&quot;&gt;(Not fully implemented yet.)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Filtrerer hvilke elementer der skal inkluderes i den endelige eksport&lt;br/&gt;&lt;span style=&quot; color:#773333;&quot;&gt;(Endnu ikke færdigimplementeret.)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="149"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="523"/>
         <source>Ignore compile status (include all items)</source>
-        <translation type="unfinished"></translation>
+        <translation>Ignorer kompileringsstatus (inkluder alle elementer)</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="156"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="524"/>
         <source>Subitems of:</source>
-        <translation type="unfinished"></translation>
+        <translation>Delelement af:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="170"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="525"/>
         <source>Labels</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiketter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="177"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="526"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="229"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="540"/>
         <source>Separations</source>
-        <translation type="unfinished"></translation>
+        <translation>Adskillelser</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="241"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="528"/>
         <source>Between folders:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mellem foldere:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings.py" line="86"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="538"/>
         <source>Empty line</source>
-        <translation type="unfinished"></translation>
+        <translation>Tom linje</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings.py" line="105"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="539"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Brugerdefineret</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="367"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="531"/>
         <source>Between texts:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mellem tekster:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="493"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="534"/>
         <source>Between folder and text:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mellem folder og tekst:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="619"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="537"/>
         <source>Between text and folder:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mellem tekst og folder:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="764"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="557"/>
         <source>Transformations</source>
-        <translation type="unfinished"></translation>
+        <translation>Transformationer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="773"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="541"/>
         <source>Typographic replacements:</source>
-        <translation type="unfinished"></translation>
+        <translation>Typografiske erstatninger:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="802"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="544"/>
         <source>Replace double quotes (&quot;) with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Erstat dobbelt apostrof (&quot;) med:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="911"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="545"/>
         <source>Replace single quotes (&apos;) with:</source>
-        <translation type="unfinished"></translation>
+        <translation>Erstat enkelt apostrof (') med:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1020"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="546"/>
         <source>Remove multiple spaces</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjern gentagne blanke</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1030"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="547"/>
         <source>Custom replacements:</source>
-        <translation type="unfinished"></translation>
+        <translation>Brugerdefinerende erstatninger:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1049"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="549"/>
         <source>Enabled</source>
-        <translation type="unfinished"></translation>
+        <translation>Slået til</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1054"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="551"/>
         <source>Replace</source>
-        <translation type="unfinished"></translation>
+        <translation>Erstat</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1059"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="553"/>
         <source>With</source>
-        <translation type="unfinished"></translation>
+        <translation>Med</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1064"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="555"/>
         <source>RegExp</source>
-        <translation type="unfinished"></translation>
+        <translation>RegExp</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1067"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="556"/>
         <source>If checked, uses regular expression for replacement. If unchecked, replaced as plain text.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis tjekket, brug regulær expression til erstatning. Ellers erstat med rå tekst.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1151"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="561"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Forhåndsvisning</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1157"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="558"/>
         <source>Font</source>
-        <translation type="unfinished"></translation>
+        <translation>Font</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1163"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="559"/>
         <source>Font:</source>
-        <translation type="unfinished"></translation>
+        <translation>Font:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="1173"/>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="560"/>
         <source>Font size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Skriftstørrelse:</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings.py" line="320"/>
         <source>Folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Folder</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings.py" line="343"/>
         <source>{}Level {} folder</source>
-        <translation type="unfinished"></translation>
+        <translation>{}Niveau {} folder</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings.py" line="346"/>
         <source>{}Level {} text</source>
-        <translation type="unfinished"></translation>
+        <translation>{}Niveau {} tekst</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="788"/>
-        <source>Replace ... with â¦</source>
-        <translation type="unfinished"></translation>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="542"/>
+        <source>Replace ... with …</source>
+        <translation>Erstat ... med …</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.ui" line="795"/>
-        <source>Replace --- with â</source>
-        <translation type="unfinished"></translation>
+        <location filename="../manuskript/ui/exporters/manuskript/plainTextSettings_ui.py" line="543"/>
+        <source>Replace --- with —</source>
+        <translation>Erstat --- med —</translation>
     </message>
 </context>
 <context>
@@ -2829,37 +2477,37 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/exporters/exportersManager.py" line="81"/>
         <source>Installed</source>
-        <translation type="unfinished"></translation>
+        <translation>Installeret</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/exportersManager.py" line="87"/>
         <source>Custom</source>
-        <translation type="unfinished"></translation>
+        <translation>Brugerdefineret</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/exportersManager.py" line="93"/>
         <source>Not found</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikke fundet</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/exportersManager.py" line="96"/>
         <source>{} not found. Install it, or set path manually.</source>
-        <translation type="unfinished"></translation>
+        <translation>{} ikke fundet. Installer, eller set stien manuelt.</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/exportersManager.py" line="124"/>
         <source>&lt;b&gt;Status:&lt;/b&gt; uninstalled.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Status:&lt;/b&gt; ikke installeret.</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/exportersManager.py" line="126"/>
         <source>&lt;b&gt;Requires:&lt;/b&gt; </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Behøver:&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../manuskript/ui/exporters/exportersManager.py" line="133"/>
         <source>Set {} executable path.</source>
-        <translation type="unfinished"></translation>
+        <translation>Set {} eksekverbar sti.</translation>
     </message>
 </context>
 <context>
@@ -2867,17 +2515,17 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/tools/frequencyAnalyzer.py" line="70"/>
         <source>Phrases</source>
-        <translation type="unfinished"></translation>
+        <translation>Fraser</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/tools/frequencyAnalyzer.py" line="108"/>
         <source>Frequency</source>
-        <translation type="unfinished"></translation>
+        <translation>Frekvens</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/tools/frequencyAnalyzer.py" line="108"/>
         <source>Word</source>
-        <translation type="unfinished"></translation>
+        <translation>Ord</translation>
     </message>
 </context>
 <context>
@@ -2885,105 +2533,105 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="133"/>
         <source>Theme:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tema:</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="364"/>
         <source>{} words / {}</source>
-        <translation type="unfinished"></translation>
+        <translation>{} ord / {}</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="368"/>
         <source>{} words</source>
-        <translation type="unfinished"></translation>
+        <translation>{} ord</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="153"/>
         <source>Spellcheck</source>
-        <translation type="unfinished"></translation>
+        <translation>Stavekontrol</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="154"/>
         <source>Navigation</source>
-        <translation type="unfinished"></translation>
+        <translation>Navigation</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="155"/>
         <source>New Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny Tekst</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="156"/>
         <source>Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="157"/>
         <source>Title: Show Full Path</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel: Vis fuld sti</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="159"/>
         <source>Theme selector</source>
-        <translation type="unfinished"></translation>
+        <translation>Temavælger</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="160"/>
         <source>Word count</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordtæller</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="161"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Fremdrift</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="162"/>
         <source>Progress: Auto Show/Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Fremdrift: Automatisk visning / Skjul</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="163"/>
         <source>Clock</source>
-        <translation type="unfinished"></translation>
+        <translation>Ur</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="164"/>
         <source>Clock: Show Seconds</source>
-        <translation type="unfinished"></translation>
+        <translation>Ur: Vis sekunder</translation>
     </message>
 </context>
 <context>
     <name>generalSettings</name>
     <message>
-        <location filename="../manuskript/ui/importers/generalSettings_ui.ui" line="41"/>
+        <location filename="../manuskript/ui/importers/generalSettings_ui.py" line="67"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/generalSettings_ui.ui" line="55"/>
+        <location filename="../manuskript/ui/importers/generalSettings_ui.py" line="62"/>
         <source>Split scenes at:</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdel scener ved:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/generalSettings_ui.ui" line="65"/>
+        <location filename="../manuskript/ui/importers/generalSettings_ui.py" line="63"/>
         <source>\n---\n</source>
-        <translation type="unfinished"></translation>
+        <translation>\n---\n</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/generalSettings_ui.ui" line="72"/>
+        <location filename="../manuskript/ui/importers/generalSettings_ui.py" line="64"/>
         <source>Trim long titles (&gt; 32 chars)</source>
-        <translation type="unfinished"></translation>
+        <translation>Trim lange titler (&gt; 32 tegn)</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/generalSettings_ui.ui" line="86"/>
+        <location filename="../manuskript/ui/importers/generalSettings_ui.py" line="65"/>
         <source>Import under:</source>
-        <translation type="unfinished"></translation>
+        <translation>Importer under:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/generalSettings_ui.ui" line="93"/>
+        <location filename="../manuskript/ui/importers/generalSettings_ui.py" line="66"/>
         <source>Import in a top-level folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Importer i en top-niveau folder</translation>
     </message>
 </context>
 <context>
@@ -2991,40 +2639,40 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/helpLabel.py" line="12"/>
         <source>If you don&apos;t wanna see me, you can hide me in Help menu.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis du ikke vil se mig, kan du skjule mig i Hjælp menuen.</translation>
     </message>
 </context>
 <context>
     <name>importer</name>
     <message>
-        <location filename="../manuskript/ui/importers/importer_ui.ui" line="119"/>
+        <location filename="../manuskript/ui/importers/importer_ui.py" line="103"/>
         <source>Import</source>
-        <translation type="unfinished"></translation>
+        <translation>Importer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/importer_ui.ui" line="22"/>
+        <location filename="../manuskript/ui/importers/importer_ui.py" line="99"/>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/importer_ui.ui" line="45"/>
+        <location filename="../manuskript/ui/importers/importer_ui.py" line="100"/>
         <source>Choose file</source>
-        <translation type="unfinished"></translation>
+        <translation>Vælg fil</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/importer_ui.ui" line="75"/>
+        <location filename="../manuskript/ui/importers/importer_ui.py" line="101"/>
         <source>Clear file</source>
-        <translation type="unfinished"></translation>
+        <translation>Rens fil</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/importer_ui.ui" line="160"/>
+        <location filename="../manuskript/ui/importers/importer_ui.py" line="105"/>
         <source>Preview</source>
-        <translation type="unfinished"></translation>
+        <translation>Forhåndsvisning</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/importers/importer_ui.ui" line="138"/>
+        <location filename="../manuskript/ui/importers/importer_ui.py" line="104"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Indstillinger</translation>
     </message>
 </context>
 <context>
@@ -3032,55 +2680,55 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/lineEditView.py" line="114"/>
         <source>Various</source>
-        <translation type="unfinished"></translation>
+        <translation>Forskellige</translation>
     </message>
 </context>
 <context>
     <name>locker</name>
     <message>
-        <location filename="../manuskript/ui/editors/locker_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/editors/locker_ui.py" line="52"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/locker_ui.ui" line="26"/>
+        <location filename="../manuskript/ui/editors/locker_ui.py" line="53"/>
         <source>Lock screen:</source>
-        <translation type="unfinished"></translation>
+        <translation>Låseskærm:</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/locker_ui.ui" line="33"/>
+        <location filename="../manuskript/ui/editors/locker_ui.py" line="54"/>
         <source>Word target</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål for antal ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/locker_ui.ui" line="40"/>
+        <location filename="../manuskript/ui/editors/locker_ui.py" line="55"/>
         <source>Time target</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål for tidsforbrug</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/locker_ui.ui" line="47"/>
+        <location filename="../manuskript/ui/editors/locker_ui.py" line="56"/>
         <source> words</source>
-        <translation type="unfinished"></translation>
+        <translation> ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/locker_ui.ui" line="63"/>
+        <location filename="../manuskript/ui/editors/locker_ui.py" line="57"/>
         <source> minutes</source>
-        <translation type="unfinished"></translation>
+        <translation> minutter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/locker_ui.ui" line="79"/>
+        <location filename="../manuskript/ui/editors/locker_ui.py" line="58"/>
         <source>Lock !</source>
-        <translation type="unfinished"></translation>
+        <translation>Lås !</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/locker.py" line="94"/>
         <source>~{} h.</source>
-        <translation type="unfinished"></translation>
+        <translation>~{} h.</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/locker.py" line="96"/>
         <source>~{} mn.</source>
-        <translation type="unfinished"></translation>
+        <translation>~{} mn.</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/locker.py" line="100"/>
@@ -3090,85 +2738,85 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/editors/locker.py" line="102"/>
         <source>{} s.</source>
-        <translation type="unfinished"></translation>
+        <translation>{} s.</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/locker.py" line="104"/>
         <source>{} remaining</source>
-        <translation type="unfinished"></translation>
+        <translation>{} udestående</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/locker.py" line="109"/>
         <source>{} words remaining</source>
-        <translation type="unfinished"></translation>
+        <translation>{} ord udestående</translation>
     </message>
 </context>
 <context>
     <name>mainEditor</name>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/editors/mainEditor_ui.py" line="93"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor_ui.ui" line="67"/>
+        <location filename="../manuskript/ui/editors/mainEditor_ui.py" line="96"/>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor_ui.ui" line="83"/>
+        <location filename="../manuskript/ui/editors/mainEditor_ui.py" line="97"/>
         <source>Index cards</source>
-        <translation type="unfinished"></translation>
+        <translation>Indexkort</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor_ui.ui" line="102"/>
+        <location filename="../manuskript/ui/editors/mainEditor_ui.py" line="98"/>
         <source>Outline</source>
-        <translation type="unfinished"></translation>
+        <translation>Skitse</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/mainEditor_ui.ui" line="198"/>
         <source>F11</source>
-        <translation type="unfinished"></translation>
+        <translation>F11</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor_ui.ui" line="47"/>
+        <location filename="../manuskript/ui/editors/mainEditor_ui.py" line="94"/>
         <source>Go to parent item</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå til overordnet element</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/mainEditor_ui.ui" line="57"/>
         <source>Alt+Up</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt+pil op</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor.py" line="251"/>
+        <location filename="../manuskript/ui/editors/mainEditor.py" line="258"/>
         <source>Root</source>
-        <translation type="unfinished"></translation>
+        <translation>Rod</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor.py" line="358"/>
+        <location filename="../manuskript/ui/editors/mainEditor.py" line="397"/>
         <source>{} words </source>
-        <translation type="unfinished"></translation>
+        <translation>{} ord </translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor.py" line="339"/>
+        <location filename="../manuskript/ui/editors/mainEditor.py" line="378"/>
         <source>({} chars) {}  words / {} </source>
-        <translation type="unfinished"></translation>
+        <translation>({} tegn) {}  ord / {} </translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor.py" line="345"/>
+        <location filename="../manuskript/ui/editors/mainEditor.py" line="384"/>
         <source>{}  words / {} </source>
-        <translation type="unfinished"></translation>
+        <translation>{}  ord / {} </translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor.py" line="360"/>
+        <location filename="../manuskript/ui/editors/mainEditor.py" line="399"/>
         <source>{} chars</source>
-        <translation type="unfinished"></translation>
+        <translation>{} tegn</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/mainEditor.py" line="354"/>
+        <location filename="../manuskript/ui/editors/mainEditor.py" line="393"/>
         <source>{} chars </source>
-        <translation type="unfinished"></translation>
+        <translation>{} tegn </translation>
     </message>
 </context>
 <context>
@@ -3176,45 +2824,45 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/exporter/manuskript/markdown.py" line="58"/>
         <source>Markdown</source>
-        <translation type="unfinished"></translation>
+        <translation>Marker</translation>
     </message>
 </context>
 <context>
     <name>metadataView</name>
     <message>
-        <location filename="../manuskript/ui/views/metadataView_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/views/metadataView_ui.py" line="94"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/metadataView_ui.ui" line="41"/>
+        <location filename="../manuskript/ui/views/metadataView_ui.py" line="95"/>
         <source>Properties</source>
-        <translation type="unfinished"></translation>
+        <translation>Egenskaber</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/metadataView_ui.ui" line="81"/>
+        <location filename="../manuskript/ui/views/metadataView_ui.py" line="96"/>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/metadataView_ui.ui" line="114"/>
+        <location filename="../manuskript/ui/views/metadataView_ui.py" line="97"/>
         <source>One line summary</source>
-        <translation type="unfinished"></translation>
+        <translation>En linjes opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/metadataView_ui.ui" line="140"/>
+        <location filename="../manuskript/ui/views/metadataView_ui.py" line="98"/>
         <source>Full summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Hel opsummering</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/metadataView_ui.ui" line="180"/>
+        <location filename="../manuskript/ui/views/metadataView_ui.py" line="100"/>
         <source>Notes / References</source>
-        <translation type="unfinished"></translation>
+        <translation>Noter / Referencer</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/metadataView_ui.ui" line="190"/>
+        <location filename="../manuskript/ui/views/metadataView_ui.py" line="101"/>
         <source>Revisions</source>
-        <translation type="unfinished"></translation>
+        <translation>Revisioner</translation>
     </message>
 </context>
 <context>
@@ -3222,135 +2870,7 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/editors/fullScreenEditor.py" line="599"/>
         <source>Auto-hide</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>outlineBasics</name>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="134"/>
-        <source>Set POV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="136"/>
-        <source>None</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="163"/>
-        <source>Set Status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="179"/>
-        <source>Set Label</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="283"/>
-        <source>New</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="142"/>
-        <source>Main</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="143"/>
-        <source>Secondary</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="144"/>
-        <source>Minor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="197"/>
-        <source>Set Custom Icon</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="198"/>
-        <source>Restore to default</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="61"/>
-        <source>Root</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="75"/>
-        <source>Open {} items in new tabs</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="78"/>
-        <source>Open {} in a new tab</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="328"/>
-        <source>About to remove</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="434"/>
-        <source>Select at least two items. Folders are ignored.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="443"/>
-        <source>All items must be on the same level (share the same parent).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="88"/>
-        <source>New &amp;Folder</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="94"/>
-        <source>New &amp;Text</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="108"/>
-        <source>&amp;Copy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="103"/>
-        <source>C&amp;ut</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="113"/>
-        <source>&amp;Paste</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="125"/>
-        <source>&amp;Rename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="119"/>
-        <source>&amp;Delete</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="315"/>
-        <source>You&apos;re about to delete {} item(s).</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/views/outlineBasics.py" line="325"/>
-        <source>Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Auto-skjul</translation>
     </message>
 </context>
 <context>
@@ -3358,53 +2878,40 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/outlineDelegates.py" line="141"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/outlineDelegates.py" line="143"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/outlineDelegates.py" line="143"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/outlineDelegates.py" line="143"/>
         <source>Minor</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>outlineItem</name>
-    <message>
-        <location filename="../manuskript/models/outlineItem.py" line="256"/>
-        <source>{} words / {} ({})</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/outlineItem.py" line="261"/>
-        <source>{} words</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre betydende</translation>
     </message>
 </context>
 <context>
     <name>pandocSettings</name>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="166"/>
+        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="254"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="180"/>
+        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="256"/>
         <source>Table of Content</source>
-        <translation type="unfinished"></translation>
+        <translation>Indholdsfortegnelse</translation>
     </message>
     <message>
-        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="185"/>
+        <location filename="../manuskript/exporter/pandoc/abstractPlainText.py" line="255"/>
         <source>Custom settings for {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Brugerindstillinger for {}</translation>
     </message>
 </context>
 <context>
@@ -3412,17 +2919,17 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/models/persosProxyModel.py" line="16"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
     <message>
         <location filename="../manuskript/models/persosProxyModel.py" line="17"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
         <location filename="../manuskript/models/persosProxyModel.py" line="18"/>
         <source>Minors</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre betydende</translation>
     </message>
 </context>
 <context>
@@ -3430,233 +2937,273 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Generelt</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Promise</source>
-        <translation type="unfinished"></translation>
+        <translation>Løfte</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Problem</source>
-        <translation type="unfinished"></translation>
+        <translation>Problem</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Fremdrift</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Resolution</source>
-        <translation type="unfinished"></translation>
+        <translation>Afklaring</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Try / Fail</source>
-        <translation type="unfinished"></translation>
+        <translation>Forsøg / Fejl</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>No and</source>
-        <translation type="unfinished"></translation>
+        <translation>Nej, og</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Yes but</source>
-        <translation type="unfinished"></translation>
+        <translation>Ja, men</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Freytag&apos;s pyramid</source>
-        <translation type="unfinished"></translation>
+        <translation>Freytags pyramide</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Exposition</source>
-        <translation type="unfinished"></translation>
+        <translation>Eksposition</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Rising action</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommende handling</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Climax</source>
-        <translation type="unfinished"></translation>
+        <translation>Klimaks</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Falling action</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuelt hændelsesforløb</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Three acts</source>
-        <translation type="unfinished"></translation>
+        <translation>Three acts structure</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>1. Setup</source>
-        <translation type="unfinished"></translation>
+        <translation>1. Setup</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>1. Inciting event</source>
-        <translation type="unfinished"></translation>
+        <translation>1. Initierende hændelse</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>1. Turning point</source>
-        <translation type="unfinished"></translation>
+        <translation>1. Vendepunkt</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>2. Choice</source>
-        <translation type="unfinished"></translation>
+        <translation>2. Valg</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>2. Reversal</source>
-        <translation type="unfinished"></translation>
+        <translation>2. Modsat</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>2. Disaster</source>
-        <translation type="unfinished"></translation>
+        <translation>2. Krise</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>3. Stand up</source>
-        <translation type="unfinished"></translation>
+        <translation>3. Stå op</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>3. Climax</source>
-        <translation type="unfinished"></translation>
+        <translation>3. Klimaks</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>3. Ending</source>
-        <translation type="unfinished"></translation>
+        <translation>3. Slutning</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Hero&apos;s journey</source>
-        <translation type="unfinished"></translation>
+        <translation>Heltens rejse</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Ordinary world</source>
-        <translation type="unfinished"></translation>
+        <translation>Dagligt miljø</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Call to adventure</source>
-        <translation type="unfinished"></translation>
+        <translation>Eventyrets kald</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Refusal of the call</source>
-        <translation type="unfinished"></translation>
+        <translation>Afslag på kaldet</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Meeting with mentor</source>
-        <translation type="unfinished"></translation>
+        <translation>Møde med mentor</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Tests</source>
-        <translation type="unfinished"></translation>
+        <translation>Prøvelser</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Approach</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilgang</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Abyss</source>
-        <translation type="unfinished"></translation>
+        <translation>Afgrund</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Reward / Revelation</source>
-        <translation type="unfinished"></translation>
+        <translation>Belønning / Åbenbaring</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Transformation</source>
-        <translation type="unfinished"></translation>
+        <translation>Transformation</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Atonement</source>
-        <translation type="unfinished"></translation>
+        <translation>Forsoning</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
         <source>Return</source>
-        <translation type="unfinished"></translation>
+        <translation>Returnering</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
+        <source>Hook</source>
+        <translation>Hook</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
+        <source>Plot Turn 1</source>
+        <translation>Plotvending 1</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
+        <source>Pinch 1</source>
+        <translation>Klemme 1</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
+        <source>Midpoint</source>
+        <translation>Midtpunkt</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
+        <source>Pinch 2</source>
+        <translation>Klemme 2</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
+        <source>Plot Turn 2</source>
+        <translation>Plotvending 2</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/views/plotDelegate.py" line="33"/>
+        <source>Dan Wells 7-point plot format</source>
+        <translation>Dan Wells 7-punkts plot format</translation>
     </message>
 </context>
 <context>
     <name>plotModel</name>
     <message>
-        <location filename="../manuskript/models/plotModel.py" line="144"/>
+        <location filename="../manuskript/models/plotModel.py" line="145"/>
         <source>Name</source>
-        <translation type="unfinished"></translation>
+        <translation>Navn</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/plotModel.py" line="146"/>
+        <location filename="../manuskript/models/plotModel.py" line="147"/>
         <source>Meta</source>
-        <translation type="unfinished"></translation>
+        <translation>Meta</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/plotModel.py" line="179"/>
+        <location filename="../manuskript/models/plotModel.py" line="180"/>
         <source>New step</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyt trin</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/plotModel.py" line="249"/>
+        <location filename="../manuskript/models/plotModel.py" line="250"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/plotModel.py" line="249"/>
+        <location filename="../manuskript/models/plotModel.py" line="250"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
-        <location filename="../manuskript/models/plotModel.py" line="249"/>
+        <location filename="../manuskript/models/plotModel.py" line="250"/>
         <source>Minor</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre betydende</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/models/plotModel.py" line="110"/>
+        <source>New plot</source>
+        <translation>Nyt plot</translation>
     </message>
 </context>
 <context>
     <name>plotTreeView</name>
     <message>
-        <location filename="../manuskript/ui/views/plotTreeView.py" line="127"/>
+        <location filename="../manuskript/ui/views/plotTreeView.py" line="131"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/plotTreeView.py" line="127"/>
+        <location filename="../manuskript/ui/views/plotTreeView.py" line="131"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/plotTreeView.py" line="127"/>
+        <location filename="../manuskript/ui/views/plotTreeView.py" line="131"/>
         <source>Minor</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre betydende</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/plotTreeView.py" line="187"/>
+        <location filename="../manuskript/ui/views/plotTreeView.py" line="191"/>
         <source>**Plot:** {}</source>
-        <translation type="unfinished"></translation>
+        <translation>**Plot:** {}</translation>
     </message>
 </context>
 <context>
@@ -3664,401 +3211,267 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/models/plotsProxyModel.py" line="22"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
     <message>
         <location filename="../manuskript/models/plotsProxyModel.py" line="23"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
         <location filename="../manuskript/models/plotsProxyModel.py" line="24"/>
         <source>Minors</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre betydende</translation>
     </message>
 </context>
 <context>
     <name>propertiesView</name>
     <message>
-        <location filename="../manuskript/ui/views/propertiesView_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/views/propertiesView_ui.py" line="173"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/propertiesView_ui.ui" line="195"/>
+        <location filename="../manuskript/ui/views/propertiesView_ui.py" line="180"/>
         <source>POV</source>
-        <translation type="unfinished"></translation>
+        <translation>POV</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/propertiesView_ui.ui" line="215"/>
+        <location filename="../manuskript/ui/views/propertiesView_ui.py" line="181"/>
         <source>Status</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/propertiesView_ui.ui" line="235"/>
+        <location filename="../manuskript/ui/views/propertiesView_ui.py" line="182"/>
         <source>Label</source>
-        <translation type="unfinished"></translation>
+        <translation>Etiket</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/propertiesView_ui.ui" line="255"/>
+        <location filename="../manuskript/ui/views/propertiesView_ui.py" line="183"/>
         <source>Compile</source>
-        <translation type="unfinished"></translation>
+        <translation>Kompiler</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/propertiesView_ui.ui" line="269"/>
+        <location filename="../manuskript/ui/views/propertiesView_ui.py" line="184"/>
         <source>Goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mål</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/propertiesView_ui.ui" line="291"/>
+        <location filename="../manuskript/ui/views/propertiesView_ui.py" line="185"/>
         <source>Word count</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>references</name>
-    <message>
-        <location filename="../manuskript/models/references.py" line="501"/>
-        <source>Not a reference: {}.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="399"/>
-        <source>Unknown reference: {}.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="106"/>
-        <source>Path:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="107"/>
-        <source>Stats:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="108"/>
-        <source>POV:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="109"/>
-        <source>Status:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="110"/>
-        <source>Label:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="111"/>
-        <source>Short summary:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="112"/>
-        <source>Long summary:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="113"/>
-        <source>Notes:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="201"/>
-        <source>Basic info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="202"/>
-        <source>Detailed info</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="203"/>
-        <source>POV of:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="364"/>
-        <source>Go to {}.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="359"/>
-        <source>Description</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="281"/>
-        <source>Result</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="282"/>
-        <source>Characters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="283"/>
-        <source>Resolution steps</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="360"/>
-        <source>Passion</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="361"/>
-        <source>Conflict</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="498"/>
-        <source>&lt;b&gt;Unknown reference:&lt;/b&gt; {}.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="506"/>
-        <source>Folder: &lt;b&gt;{}&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="508"/>
-        <source>Text: &lt;b&gt;{}&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="513"/>
-        <source>Character: &lt;b&gt;{}&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="516"/>
-        <source>Plot: &lt;b&gt;{}&lt;/b&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="519"/>
-        <source>World: &lt;b&gt;{name}&lt;/b&gt;{path}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="592"/>
-        <source>Referenced in:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="212"/>
-        <source>Motivation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="213"/>
-        <source>Goal</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="215"/>
-        <source>Epiphany</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="216"/>
-        <source>Short summary</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/models/references.py" line="217"/>
-        <source>Longer summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordoptælling</translation>
     </message>
 </context>
 <context>
     <name>revisions</name>
     <message>
-        <location filename="../manuskript/ui/revisions_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/revisions_ui.py" line="86"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/revisions_ui.ui" line="107"/>
+        <location filename="../manuskript/ui/revisions_ui.py" line="87"/>
         <source>Options</source>
-        <translation type="unfinished"></translation>
+        <translation>Muligheder</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="257"/>
         <source>Restore</source>
-        <translation type="unfinished"></translation>
+        <translation>Gendan</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="258"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Slet</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="45"/>
         <source>Show modifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis ændringer</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="52"/>
         <source>Show ancient version</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis ældre version</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="60"/>
         <source>Show spaces</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis blanke</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="66"/>
         <source>Show modifications only</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis kun ændringer</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="110"/>
         <source>{} years ago</source>
-        <translation type="unfinished"></translation>
+        <translation>{} år siden</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="112"/>
         <source>{} months ago</source>
-        <translation type="unfinished"></translation>
+        <translation>{} måneder siden</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="114"/>
         <source>{} days ago</source>
-        <translation type="unfinished"></translation>
+        <translation>{} dage siden</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="116"/>
         <source>1 day ago</source>
-        <translation type="unfinished"></translation>
+        <translation>1 dag siden</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="118"/>
         <source>{} hours ago</source>
-        <translation type="unfinished"></translation>
+        <translation>{} timer siden</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="120"/>
         <source>{} minutes ago</source>
-        <translation type="unfinished"></translation>
+        <translation>{} minutter siden</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="122"/>
         <source>{} seconds ago</source>
-        <translation type="unfinished"></translation>
+        <translation>{} sekunder siden</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="182"/>
         <source>Line {}:</source>
-        <translation type="unfinished"></translation>
+        <translation>Linje {}:</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/revisions.py" line="261"/>
         <source>Clear all</source>
-        <translation type="unfinished"></translation>
+        <translation>Ryd alt</translation>
     </message>
 </context>
 <context>
     <name>search</name>
     <message>
-        <location filename="../manuskript/ui/search_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/search_ui.py" line="47"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/search_ui.ui" line="46"/>
+        <location filename="../manuskript/ui/search_ui.py" line="48"/>
         <source>Search for...</source>
-        <translation type="unfinished"></translation>
+        <translation>Søg efter...</translation>
+    </message>
+</context>
+<context>
+    <name>searchMenu</name>
+    <message>
+        <location filename="../manuskript/ui/searchMenu.py" line="31"/>
+        <source>Case sensitive</source>
+        <translation>Forskel på store/små bogstaver</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/searchMenu.py" line="32"/>
+        <source>Match words</source>
+        <translation>Match ord</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/searchMenu.py" line="33"/>
+        <source>Regex</source>
+        <translation>Regex</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/searchMenu.py" line="39"/>
+        <source>Search in:</source>
+        <translation>Søg i:</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/searchMenu.py" line="51"/>
+        <source>Options:</source>
+        <translation>Muligheder:</translation>
     </message>
 </context>
 <context>
     <name>settingsWindow</name>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="674"/>
+        <location filename="../manuskript/settingsWindow.py" line="688"/>
         <source>New status</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny status</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="695"/>
+        <location filename="../manuskript/settingsWindow.py" line="709"/>
         <source>New label</source>
-        <translation type="unfinished"></translation>
+        <translation>Ny etiket</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="731"/>
+        <location filename="../manuskript/settingsWindow.py" line="745"/>
         <source>newtheme</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyt tema</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="741"/>
+        <location filename="../manuskript/settingsWindow.py" line="755"/>
         <source>New theme</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyt tema</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="773"/>
+        <location filename="../manuskript/settingsWindow.py" line="787"/>
         <source> (read-only)</source>
-        <translation type="unfinished"></translation>
+        <translation> (skrivebeskyttet)</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="534"/>
+        <location filename="../manuskript/settingsWindow.py" line="548"/>
         <source>Open Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Åben billede</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="534"/>
-        <source>Image files (*.jpg; *.jpeg; *.png)</source>
-        <translation type="unfinished"></translation>
+        <location filename="../manuskript/settingsWindow.py" line="548"/>
+        <source>Image files</source>
+        <translation>Billedfiler</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="550"/>
+        <location filename="../manuskript/settingsWindow.py" line="564"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Fejl</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="547"/>
+        <location filename="../manuskript/settingsWindow.py" line="561"/>
         <source>Unable to load selected file</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan ikke indlæse valgte fil</translation>
     </message>
     <message>
-        <location filename="../manuskript/settingsWindow.py" line="550"/>
+        <location filename="../manuskript/settingsWindow.py" line="564"/>
         <source>Unable to add selected image:
 {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan ikke indlæse valgte billede:
+{}</translation>
     </message>
 </context>
 <context>
     <name>sldImportance</name>
     <message>
-        <location filename="../manuskript/ui/views/sldImportance_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/views/sldImportance_ui.py" line="37"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/views/sldImportance_ui.ui" line="39"/>
+        <location filename="../manuskript/ui/views/sldImportance_ui.py" line="38"/>
         <source>TextLabel</source>
-        <translation type="unfinished"></translation>
+        <translation>Ledetekst</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/sldImportance.py" line="29"/>
         <source>Minor</source>
-        <translation type="unfinished"></translation>
+        <translation>Mindre betydende</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/sldImportance.py" line="30"/>
         <source>Secondary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekundær</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/sldImportance.py" line="31"/>
         <source>Main</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoved</translation>
     </message>
 </context>
 <context>
@@ -4080,114 +3493,176 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
 
             &lt;p&gt;&lt;b&gt;Mark:&lt;/b&gt;&lt;/p&gt;
             </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">
+            &lt;p&gt;Opdel det/de valgte element(er) ved det givne mærke.&lt;/p&gt;
+
+            &lt;p&gt;Hvis et af de valgte elementer er en mappe, vil den blive anvendt
+            rekursivt på &lt;i&gt;alle&lt;/i&gt; dens underelementer.&lt;/p&gt;
+
+            &lt;p&gt;Opdelingsmærket kan indeholde følgende escape-sekvenser:
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;b&gt;&lt;code&gt;\n&lt;/code&gt;&lt;/b&gt;: linjeskift&lt;/li&gt;
+                    &lt;li&gt;&lt;b&gt;&lt;code&gt;\t&lt;/code&gt;&lt;/b&gt;: tab&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/p&gt;
+
+            &lt;p&gt;&lt;b&gt;Mark:&lt;/b&gt;&lt;/p&gt;
+            </translation>
     </message>
     <message>
         <location filename="../manuskript/ui/tools/splitDialog.py" line="47"/>
         <source>Split &apos;{}&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsplit '{}'</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/tools/splitDialog.py" line="51"/>
         <source>Split items</source>
-        <translation type="unfinished"></translation>
+        <translation>Opsplit elementer</translation>
     </message>
 </context>
 <context>
     <name>storylineView</name>
     <message>
-        <location filename="../manuskript/ui/views/storylineView_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/views/storylineView_ui.py" line="58"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/storylineView.py" line="36"/>
         <source>Show Plots</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis plots</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/storylineView.py" line="43"/>
         <source>Show Characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Vis personer</translation>
     </message>
 </context>
 <context>
     <name>tabSplitter</name>
     <message>
-        <location filename="../manuskript/ui/editors/tabSplitter.py" line="67"/>
+        <location filename="../manuskript/ui/editors/tabSplitter.py" line="68"/>
         <source>Open selected items in that view.</source>
-        <translation type="unfinished"></translation>
+        <translation>Åben valgte elementer i dette view.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/tabSplitter.py" line="158"/>
+        <location filename="../manuskript/ui/editors/tabSplitter.py" line="172"/>
         <source>Split horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdel horisontalt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/tabSplitter.py" line="168"/>
+        <location filename="../manuskript/ui/editors/tabSplitter.py" line="182"/>
         <source>Close split</source>
-        <translation type="unfinished"></translation>
+        <translation>Afslut opdeling</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/editors/tabSplitter.py" line="204"/>
+        <location filename="../manuskript/ui/editors/tabSplitter.py" line="218"/>
         <source>Split vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdel vertikalt</translation>
+    </message>
+</context>
+<context>
+    <name>targets</name>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="131"/>
+        <source>Project Targets</source>
+        <translation>Projektmål</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="132"/>
+        <source>Draft Target</source>
+        <translation>Kladdemål</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="139"/>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="140"/>
+        <source>of</source>
+        <translation>af</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="135"/>
+        <source>10,000</source>
+        <translation>10.000</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="136"/>
+        <source>Words</source>
+        <translation>Ord</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="137"/>
+        <source>Session Target</source>
+        <translation>Sessionmål</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="138"/>
+        <source>Reset</source>
+        <translation>Reset</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/tools/targets_ui.py" line="141"/>
+        <source>words</source>
+        <translation>ord</translation>
     </message>
 </context>
 <context>
     <name>textEditView</name>
     <message>
-        <location filename="../manuskript/ui/views/textEditView.py" line="324"/>
+        <location filename="../manuskript/ui/views/textEditView.py" line="334"/>
         <source>Various</source>
-        <translation type="unfinished"></translation>
+        <translation>Forskellige</translation>
     </message>
 </context>
 <context>
     <name>textFormat</name>
     <message>
-        <location filename="../manuskript/ui/editors/textFormat_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/editors/textFormat_ui.py" line="90"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="18"/>
         <source>CTRL+B</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+B</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="19"/>
         <source>CTRL+I</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+I</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="20"/>
         <source>CTRL+U</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+U</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="21"/>
         <source>CTRL+P</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+P</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="22"/>
         <source>CTRL+L</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+L</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="23"/>
         <source>CTRL+E</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+E</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="24"/>
         <source>CTRL+R</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+R</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/editors/textFormat.py" line="25"/>
         <source>CTRL+J</source>
-        <translation type="unfinished"></translation>
+        <translation>CTRL+J</translation>
     </message>
 </context>
 <context>
@@ -4195,245 +3670,245 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/ui/views/treeView.py" line="48"/>
         <source>Expand {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Udvid {}</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/treeView.py" line="52"/>
         <source>Collapse {}</source>
-        <translation type="unfinished"></translation>
+        <translation>Kollaps {}</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/treeView.py" line="59"/>
         <source>Expand All</source>
-        <translation type="unfinished"></translation>
+        <translation>Udvid alt</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/views/treeView.py" line="63"/>
         <source>Collapse All</source>
-        <translation type="unfinished"></translation>
+        <translation>Kollaps alt</translation>
     </message>
 </context>
 <context>
     <name>welcome</name>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="14"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="126"/>
         <source>Form</source>
-        <translation type="unfinished"></translation>
+        <translation>Formatter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="50"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="127"/>
         <source>1</source>
-        <translation type="unfinished"></translation>
+        <translation>1</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="55"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="130"/>
         <source>Templates</source>
-        <translation type="unfinished"></translation>
+        <translation>Skabeloner</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="86"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="131"/>
         <source>Empty</source>
-        <translation type="unfinished"></translation>
+        <translation>Tom</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="225"/>
         <source>Novel</source>
-        <translation type="unfinished"></translation>
+        <translation>Roman</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="230"/>
         <source>Novella</source>
-        <translation type="unfinished"></translation>
+        <translation>Novelle</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="235"/>
         <source>Short Story</source>
-        <translation type="unfinished"></translation>
+        <translation>Novelle</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="247"/>
         <source>Research paper</source>
-        <translation type="unfinished"></translation>
+        <translation>Research dokument</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="418"/>
+        <location filename="../manuskript/ui/welcome.py" line="429"/>
         <source>Demo projects</source>
-        <translation type="unfinished"></translation>
+        <translation>Demo projekter</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="177"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="138"/>
         <source>Add level</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilføj niveau</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="190"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="139"/>
         <source>Add word count</source>
-        <translation type="unfinished"></translation>
+        <translation>Tilføj antal ord</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="213"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="140"/>
         <source>Next time, automatically open last project</source>
-        <translation type="unfinished"></translation>
+        <translation>Åben automatisk seneste projekt</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="238"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="141"/>
         <source>Open...</source>
-        <translation type="unfinished"></translation>
+        <translation>Åben...</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="248"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="142"/>
         <source>Recent</source>
-        <translation type="unfinished"></translation>
+        <translation>Seneste</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome_ui.ui" line="258"/>
+        <location filename="../manuskript/ui/welcome_ui.py" line="143"/>
         <source>Create</source>
-        <translation type="unfinished"></translation>
+        <translation>Opret</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="158"/>
         <source>Open project</source>
-        <translation type="unfinished"></translation>
+        <translation>Åben projekt</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="158"/>
         <source>Manuskript project (*.msk);;All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Manuskript projekt (*.msk);;Alle filer (*)</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="172"/>
         <source>Save project as...</source>
-        <translation type="unfinished"></translation>
+        <translation>Gem projekt som ...</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="196"/>
         <source>Manuskript project (*.msk)</source>
-        <translation type="unfinished"></translation>
+        <translation>Manuskript projekt (*.msk)</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="188"/>
         <source>Manuskript</source>
-        <translation type="unfinished"></translation>
+        <translation>Manuskript</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="196"/>
         <source>Create New Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Opret nyt projekt</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="208"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Advarsel</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="208"/>
         <source>Overwrite existing project {} ?</source>
-        <translation type="unfinished"></translation>
+        <translation>Overskriv eksisterende projekt {} ?</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="224"/>
         <source>Empty fiction</source>
-        <translation type="unfinished"></translation>
+        <translation>Blank fiktion</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="448"/>
+        <location filename="../manuskript/ui/welcome.py" line="459"/>
         <source>Chapter</source>
-        <translation type="unfinished"></translation>
+        <translation>Kapitel</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="449"/>
+        <location filename="../manuskript/ui/welcome.py" line="460"/>
         <source>Scene</source>
-        <translation type="unfinished"></translation>
+        <translation>Scene</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="239"/>
         <source>Trilogy</source>
-        <translation type="unfinished"></translation>
+        <translation>Trilogi</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="239"/>
         <source>Book</source>
-        <translation type="unfinished"></translation>
+        <translation>Bog</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="247"/>
         <source>Section</source>
-        <translation type="unfinished"></translation>
+        <translation>Sektion</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="246"/>
         <source>Empty non-fiction</source>
-        <translation type="unfinished"></translation>
+        <translation>Blank ikke-fiktion</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="308"/>
+        <location filename="../manuskript/ui/welcome.py" line="309"/>
         <source>words each.</source>
-        <translation type="unfinished"></translation>
+        <translation>ord hver.</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="311"/>
+        <location filename="../manuskript/ui/welcome.py" line="312"/>
         <source>of</source>
-        <translation type="unfinished"></translation>
+        <translation>af</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="335"/>
+        <location filename="../manuskript/ui/welcome.py" line="336"/>
         <source>Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Tekst</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="338"/>
+        <location filename="../manuskript/ui/welcome.py" line="339"/>
         <source>Something</source>
-        <translation type="unfinished"></translation>
+        <translation>Noget</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="384"/>
+        <location filename="../manuskript/ui/welcome.py" line="395"/>
         <source>&lt;b&gt;Total:&lt;/b&gt; {} words (~ {} pages)</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;b&gt;Total:&lt;/b&gt; {} ord (~ {} sider)</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="405"/>
+        <location filename="../manuskript/ui/welcome.py" line="416"/>
         <source>Fiction</source>
-        <translation type="unfinished"></translation>
+        <translation>Fiktion</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="411"/>
+        <location filename="../manuskript/ui/welcome.py" line="422"/>
         <source>Non-fiction</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/welcome.py" line="446"/>
-        <source>Idea</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/welcome.py" line="447"/>
-        <source>Note</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../manuskript/ui/welcome.py" line="450"/>
-        <source>Research</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikke-fiktion</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="457"/>
-        <source>TODO</source>
-        <translation type="unfinished"></translation>
+        <source>Idea</source>
+        <translation>Ide</translation>
     </message>
     <message>
         <location filename="../manuskript/ui/welcome.py" line="458"/>
+        <source>Note</source>
+        <translation>Note</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/welcome.py" line="461"/>
+        <source>Research</source>
+        <translation>Undersøgelse</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/welcome.py" line="468"/>
+        <source>TODO</source>
+        <translation>TODO</translation>
+    </message>
+    <message>
+        <location filename="../manuskript/ui/welcome.py" line="469"/>
         <source>First draft</source>
-        <translation type="unfinished"></translation>
+        <translation>Første draft</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="459"/>
+        <location filename="../manuskript/ui/welcome.py" line="470"/>
         <source>Second draft</source>
-        <translation type="unfinished"></translation>
+        <translation>Andet draft</translation>
     </message>
     <message>
-        <location filename="../manuskript/ui/welcome.py" line="460"/>
+        <location filename="../manuskript/ui/welcome.py" line="471"/>
         <source>Final</source>
-        <translation type="unfinished"></translation>
+        <translation>Endelig version</translation>
     </message>
 </context>
 <context>
@@ -4441,212 +3916,212 @@ laver elementer for hver titel.&lt;br/&gt;&amp;nbsp;</translation>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="136"/>
         <source>New item</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyt element</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Fantasy world building</source>
-        <translation type="unfinished"></translation>
+        <translation>Opbygge Fantasy Verden</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Physical</source>
-        <translation type="unfinished"></translation>
+        <translation>Fysisk</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Climate</source>
-        <translation type="unfinished"></translation>
+        <translation>Klima</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Topography</source>
-        <translation type="unfinished"></translation>
+        <translation>Topografi</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Astronomy</source>
-        <translation type="unfinished"></translation>
+        <translation>Astronomi</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Wild life</source>
-        <translation type="unfinished"></translation>
+        <translation>Natur</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Flora</source>
-        <translation type="unfinished"></translation>
+        <translation>Flora</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>History</source>
-        <translation type="unfinished"></translation>
+        <translation>Historie</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Races</source>
-        <translation type="unfinished"></translation>
+        <translation>Væddeløb</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Diseases</source>
-        <translation type="unfinished"></translation>
+        <translation>Sygdomme</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Cultural</source>
-        <translation type="unfinished"></translation>
+        <translation>Kulturelt</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Customs</source>
-        <translation type="unfinished"></translation>
+        <translation>Brugerdefineret</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Food</source>
-        <translation type="unfinished"></translation>
+        <translation>Fødevarer</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Languages</source>
-        <translation type="unfinished"></translation>
+        <translation>Sprog</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Education</source>
-        <translation type="unfinished"></translation>
+        <translation>Uddannelse</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Dresses</source>
-        <translation type="unfinished"></translation>
+        <translation>Tøj og mode</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Science</source>
-        <translation type="unfinished"></translation>
+        <translation>Videskab</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Calendar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kalender</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Bodily language</source>
-        <translation type="unfinished"></translation>
+        <translation>Kropssprog</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Ethics</source>
-        <translation type="unfinished"></translation>
+        <translation>Etik</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Religion</source>
-        <translation type="unfinished"></translation>
+        <translation>Religion</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Government</source>
-        <translation type="unfinished"></translation>
+        <translation>Ledelse</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Politics</source>
-        <translation type="unfinished"></translation>
+        <translation>Politik</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Gender roles</source>
-        <translation type="unfinished"></translation>
+        <translation>Kønsroller</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Music and arts</source>
-        <translation type="unfinished"></translation>
+        <translation>Musik og kunst</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Architecture</source>
-        <translation type="unfinished"></translation>
+        <translation>Arkitektur</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Military</source>
-        <translation type="unfinished"></translation>
+        <translation>Militær</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Technology</source>
-        <translation type="unfinished"></translation>
+        <translation>Teknologi</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Courtship</source>
-        <translation type="unfinished"></translation>
+        <translation>Brylluper</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Demography</source>
-        <translation type="unfinished"></translation>
+        <translation>Demografi</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Transportation</source>
-        <translation type="unfinished"></translation>
+        <translation>Transport</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="262"/>
         <source>Medicine</source>
-        <translation type="unfinished"></translation>
+        <translation>Medicin</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="285"/>
         <source>Magic system</source>
-        <translation type="unfinished"></translation>
+        <translation>Magiske systemer</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="285"/>
         <source>Rules</source>
-        <translation type="unfinished"></translation>
+        <translation>Regler</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="285"/>
         <source>Organization</source>
-        <translation type="unfinished"></translation>
+        <translation>Organisation</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="285"/>
         <source>Magical objects</source>
-        <translation type="unfinished"></translation>
+        <translation>Magiske objekter</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="285"/>
         <source>Magical places</source>
-        <translation type="unfinished"></translation>
+        <translation>Magiske steder</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="285"/>
         <source>Magical races</source>
-        <translation type="unfinished"></translation>
+        <translation>Magiske stammer</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="292"/>
         <source>Important places</source>
-        <translation type="unfinished"></translation>
+        <translation>Vigtige steder</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="293"/>
         <source>Important objects</source>
-        <translation type="unfinished"></translation>
+        <translation>Vigtige objekter</translation>
     </message>
     <message>
         <location filename="../manuskript/models/worldModel.py" line="251"/>
         <source>Natural resources</source>
-        <translation type="unfinished"></translation>
+        <translation>Naturlige ressourcer</translation>
     </message>
 </context>
 </TS>

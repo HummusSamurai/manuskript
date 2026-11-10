@@ -7,15 +7,16 @@ import re
 from PyQt5.Qt import qVersion, PYQT_VERSION_STR
 from PyQt5.QtCore import (pyqtSignal, QSignalMapper, QTimer, QSettings, Qt, QPoint,
                           QRegExp, QUrl, QSize, QModelIndex)
-from PyQt5.QtGui import QStandardItemModel, QIcon, QColor
+from PyQt5.QtGui import QStandardItemModel, QIcon, QColor, QStandardItem, QKeySequence
 from PyQt5.QtWidgets import QMainWindow, QHeaderView, qApp, QMenu, QActionGroup, QAction, QStyle, QListWidgetItem, \
-    QLabel, QDockWidget, QWidget, QMessageBox, QLineEdit
+    QLabel, QDockWidget, QWidget, QMessageBox, QLineEdit, QTextEdit, QTreeView, QDialog, QTableView, QShortcut
 
 from manuskript import settings
 from manuskript.enums import Character, PlotStep, Plot, World, Outline
 from manuskript.functions import wordCount, appPath, findWidgetsOfClass, openURL, showInFolder
 import manuskript.functions as F
 from manuskript import loadSave
+from manuskript.functions.history.History import History
 from manuskript.logging import getLogFilePath
 from manuskript.models.characterModel import characterModel
 from manuskript.models import outlineModel
@@ -23,6 +24,7 @@ from manuskript.models.plotModel import plotModel
 from manuskript.models.worldModel import worldModel
 from manuskript.settingsWindow import settingsWindow
 from manuskript.ui import style
+from manuskript.ui import characterInfoDialog
 from manuskript.ui.about import aboutDialog
 from manuskript.ui.collapsibleDockWidgets import collapsibleDockWidgets
 from manuskript.ui.importers.importer import importerDialog
@@ -30,10 +32,12 @@ from manuskript.ui.exporters.exporter import exporterDialog
 from manuskript.ui.helpLabel import helpLabel
 from manuskript.ui.mainWindow import Ui_MainWindow
 from manuskript.ui.tools.frequencyAnalyzer import frequencyAnalyzer
+from manuskript.ui.tools.targets import TargetsDialog
 from manuskript.ui.views.outlineDelegates import outlineCharacterDelegate
 from manuskript.ui.views.plotDelegate import plotDelegate
 from manuskript.ui.views.MDEditView import MDEditView
 from manuskript.ui.statusLabel import statusLabel
+from manuskript.ui.bulkInfoManager import Ui_BulkInfoManager
 
 # Spellcheck support
 from manuskript.ui.views.textEditView import textEditView
@@ -69,6 +73,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self._defaultCursorFlashTime = 1000 # Overridden at startup with system
                                             # value. In manuskript.main.
         self._autoLoadProject = None  # Used to load a command line project
+        self.sessionStartWordCount = 0  # Used to track session targets
+        self.history = History()
+        self._previousSelectionEmpty = True
 
         self.readSettings()
 
@@ -100,7 +107,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # Main Menu
         for i in [self.actSave, self.actSaveAs, self.actCloseProject,
                   self.menuEdit, self.menuView, self.menuOrganize,
-                  self.menuTools, self.menuHelp, self.actImport,
+                  self.menuNavigate, self.menuTools, self.menuHelp, self.actImport,
                   self.actCompile, self.actSettings]:
             i.setEnabled(False)
 
@@ -118,6 +125,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.actCut.triggered.connect(self.documentsCut)
         self.actPaste.triggered.connect(self.documentsPaste)
         self.actSearch.triggered.connect(self.doSearch)
+        QShortcut(
+            QKeySequence(Qt.Key_Escape),
+            self.dckSearch,
+            self.dckSearch.close,
+            context=Qt.WidgetWithChildrenShortcut,
+        )
         self.actRename.triggered.connect(self.documentsRename)
         self.actDuplicate.triggered.connect(self.documentsDuplicate)
         self.actDelete.triggered.connect(self.documentsDelete)
@@ -154,6 +167,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.actSplitCursor.triggered.connect(self.documentsSplitCursor)
         self.actMerge.triggered.connect(self.documentsMerge)
 
+        # Main menu:: Navigate
+        self.actBack.triggered.connect(self.navigateBack)
+        self.actForward.triggered.connect(self.navigateForward)
+
         # Main Menu:: view
         self.generateViewMenu()
         self.actModeGroup = QActionGroup(self)
@@ -164,13 +181,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         # Main Menu:: Tool
         self.actToolFrequency.triggered.connect(self.frequencyAnalyzer)
+        self.actToolTargets.triggered.connect(self.sessionTargets)
         self.actSupport.triggered.connect(self.support)
         self.actLocateLog.triggered.connect(self.locateLogFile)
         self.actAbout.triggered.connect(self.about)
 
         self.makeUIConnections()
 
-        # self.loadProject(os.path.join(appPath(), "test_project.zip"))
+        # Tools non-modal windows
+        self.td = None  # Targets Dialog
+        self.fw = None  # Frequency Window
+
+        # Bulk Character Info Management
+        self.tabsData = self.saveCharacterTabs()  # Used for restoring tabsData with loadCharacterTabs() methods.
+        self.BulkManageUi = None
+        self.bulkAffectedCharacters = []
+        self.isPersoBulkModeEnabled = False
 
     def updateDockVisibility(self, restore=False):
         """
@@ -241,6 +267,54 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                   self.actDelete,
                   self.actRename]:
             i.setEnabled(tabIsEditor)
+        tabIndex = self.tabMain.currentIndex()
+
+        if tabIndex == self.TabPersos:
+            selectedCharacters = self.lstCharacters.currentCharacters()
+            characterSelectionIsEmpty = not any(selectedCharacters)
+
+            if characterSelectionIsEmpty:
+                self.pushHistory(("character", None))
+                self._previousSelectionEmpty = True
+            else:
+                character = selectedCharacters[0]
+                self.pushHistory(("character", character.ID()))
+                self._previousSelectionEmpty = False
+        elif tabIndex == self.TabPlots:
+            id = self.lstPlots.currentPlotID()
+            self.pushHistory(("plot", id))
+            self._previousSelectionEmpty = id is None
+        elif tabIndex == self.TabWorld:
+            index = self.mdlWorld.selectedIndex()
+
+            if index.isValid():
+                id = self.mdlWorld.ID(index)
+                self.pushHistory(("world", id))
+                self._previousSelectionEmpty = id is not None
+            else:
+                self.pushHistory(("world", None))
+                self._previousSelectionEmpty = True
+        elif tabIndex == self.TabOutline:
+            index = self.treeOutlineOutline.selectionModel().currentIndex()
+            if index.isValid():
+                id = self.mdlOutline.ID(index)
+                self.pushHistory(("outline", id))
+                self._previousSelectionEmpty = id is not None
+            else:
+                self.pushHistory(("outline", None))
+                self._previousSelectionEmpty = False
+        elif tabIndex == self.TabRedac:
+            index = self.treeRedacOutline.selectionModel().currentIndex()
+            if index.isValid():
+                id = self.mdlOutline.ID(index)
+                self.pushHistory(("redac", id))
+                self._previousSelectionEmpty = id is not None
+            else:
+                self.pushHistory(("redac", None))
+                self._previousSelectionEmpty = False
+        else:
+            self.pushHistory(("main", self.tabMain.currentIndex()))
+            self._previousSelectionEmpty = False
 
     def focusChanged(self, old, new):
         """
@@ -259,9 +333,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         targets = [
             self.treeRedacOutline,
             self.mainEditor
-            ]
+        ]
 
-        while new != None:
+        while new is not None:
             if new in targets:
                 self._lastFocus = new
                 break
@@ -280,6 +354,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # OUTLINE
     ###############################################################################
 
+    def outlineChanged(self, selected, deselected):
+        index = self.treeOutlineOutline.selectionModel().currentIndex()
+        if not index.isValid():
+            self.pushHistory(("outline", None))
+            self._previousSelectionEmpty = True
+            return
+        
+        self.pushHistory(("outline", self.mdlOutline.ID(index)))
+        self._previousSelectionEmpty = False
+
+
     def outlineRemoveItemsRedac(self):
         self.treeRedacOutline.delete()
 
@@ -290,18 +375,177 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     # CHARACTERS
     ###############################################################################
 
-    def changeCurrentCharacter(self, trash=None):
-        """
+    def setPersoBulkMode(self, enabled: bool):
+        if enabled and self.BulkManageUi is None: # Delete all tabs and create the manager one
+            # Create the widget
+            bulkPersoInfoManager = QWidget()
+            bulkPersoInfoManagerUi = Ui_BulkInfoManager()
+            bulkPersoInfoManagerUi.setupUi(bulkPersoInfoManager)
 
-        @return:
-        """
-        c = self.lstCharacters.currentCharacter()
-        if not c:
-            self.tabPersos.setEnabled(False)
+            self.BulkManageUi = bulkPersoInfoManagerUi  # for global use
+
+            model = QStandardItemModel()
+
+            # Set the column headers
+            model.setColumnCount(2)
+            model.setHorizontalHeaderLabels([self.tr("Name"), self.tr("Value")])
+
+            # Set the width
+            self.updatePersoInfoView(bulkPersoInfoManagerUi.tableView)
+
+            bulkPersoInfoManagerUi.tableView.setModel(model)  # Set the model of tableView
+
+            self.tabPersos.clear()
+            self.tabPersos.addTab(bulkPersoInfoManager, self.tr("Bulk Info Manager"))
+            self.isPersoBulkModeEnabled = True
+            self.refreshBulkAffectedCharacters()
+
+            # Showing the character names on the label
+            labelText = self.createCharacterSelectionString()
+            bulkPersoInfoManagerUi.lblCharactersDynamic.setText(labelText)
+
+            # Making the connections
+            self.makeBulkInfoConnections(bulkPersoInfoManagerUi)
+
+        elif enabled and self.BulkManageUi is not None:  # If yet another character is selected, refresh the label
+            labelText = self.createCharacterSelectionString()
+            self.BulkManageUi.lblCharactersDynamic.setText(labelText)
+
+        else:  # Delete manager tab and restore the others
+            if self.BulkManageUi is not None:
+                self.tabPersos.clear()
+                self.loadCharacterTabs()
+            self.BulkManageUi = None
+            self.bulkAffectedCharacters.clear()
+
+    def createCharacterSelectionString(self):
+        self.refreshBulkAffectedCharacters()
+        labelText = ""
+        length = len(self.bulkAffectedCharacters)
+        for i in range(length-1):
+            labelText += '"' + self.bulkAffectedCharacters[i] + '"' + ", "
+
+        labelText += '"' + self.bulkAffectedCharacters[length-1] + '"'
+
+        return labelText
+
+    def makeBulkInfoConnections(self, bulkUi):
+        # A lambda has to be used to pass in the argument
+        bulkUi.btnPersoBulkAddInfo.clicked.connect(lambda: self.addBulkInfo(bulkUi))
+        bulkUi.btnPersoBulkRmInfo.clicked.connect(lambda: self.removeBulkInfo(bulkUi))
+        bulkUi.btnPersoBulkApply.clicked.connect(lambda: self.applyBulkInfo(bulkUi))
+
+    def applyBulkInfo(self, bulkUi):
+        selectedItems = self.lstCharacters.currentCharacterIDs()
+
+        # Get the data from the tableview
+        model = bulkUi.tableView.model()
+        if model.rowCount() == 0:
+            QMessageBox.warning(self, self.tr("No Entries!"),
+                                self.tr("Please add entries to apply to the selected characters."))
             return
 
+        # Loop through each selected character and add the bulk info to them
+        for ID in selectedItems:
+            for row in range(model.rowCount()):
+                description = model.item(row, 0).text()
+                value = model.item(row, 1).text()
+                self.lstCharacters._model.addCharacterInfo(ID, description, value)
+
+        QMessageBox.information(self, self.tr("Bulk Info Applied"),
+                                self.tr("The bulk info has been applied to the selected characters."))
+
+        # Remove all rows from the table
+        model.removeRows(0, model.rowCount())
+
+    def addBulkInfo(self, bulkUi): # Adds an item to the list
+        charInfoDialog = QDialog()
+        charInfoUi = characterInfoDialog.Ui_characterInfoDialog()
+        charInfoUi.setupUi(charInfoDialog)
+
+        if charInfoDialog.exec_() == QDialog.Accepted:
+            # User clicked OK, get the input values
+            description = charInfoUi.descriptionLineEdit.text()
+            value = charInfoUi.valueLineEdit.text()
+
+            # Add a new row to the model with the description and value
+            row = [QStandardItem(description), QStandardItem(value)]
+
+            bulkUi.tableView.model().appendRow(row)
+
+            bulkUi.tableView.update()
+
+    def removeBulkInfo(self, bulkUi):
+        # Get the selected rows
+        selection = bulkUi.tableView.selectionModel().selectedRows()
+
+        # Iterate over the rows and remove them (reversed, so the iteration is not affected)
+        for index in reversed(selection):
+            bulkUi.tableView.model().removeRow(index.row())
+
+    def saveCharacterTabs(self):
+        tabsData = []
+        for i in range(self.tabPersos.count()):
+            tabData = {}
+            widget = self.tabPersos.widget(i)
+            tabData['widget'] = widget
+            tabData['title'] = self.tabPersos.tabText(i)
+            tabsData.append(tabData)
+        return tabsData
+
+    def loadCharacterTabs(self):
+        for tabData in self.tabsData:
+            widget = tabData['widget']
+            title = tabData['title']
+            self.tabPersos.addTab(widget, title)
+
+    def handleCharacterSelectionChanged(self):
+        selectedCharacters = self.lstCharacters.currentCharacters()
+        characterSelectionIsEmpty = not any(selectedCharacters)
+        if characterSelectionIsEmpty:
+            self.pushHistory(("character", None))
+            self.tabPersos.setEnabled(False)
+            self._previousSelectionEmpty = True
+            return
+
+        cList = list(filter(None, self.lstCharacters.currentCharacters())) #cList contains all valid characters
+        character = cList[0]
+        self.changeCurrentCharacter(character)
+
+        self.pushHistory(("character", character.ID()))
+        self._previousSelectionEmpty = False
+
+        if len(selectedCharacters) > 1:
+            self.setPersoBulkMode(True)
+        else:
+            if self.BulkManageUi is not None:
+                self.refreshBulkAffectedCharacters()
+                self.BulkManageUi.lblCharactersDynamic.setText( self.createCharacterSelectionString() )
+
+                tableview_model = self.BulkManageUi.tableView.model()
+                if tableview_model.rowCount() > 0:
+                    confirm = QMessageBox.warning(
+                        self, self.tr("Un-applied data!"),
+                        self.tr("There are un-applied entries in this tab. Discard them?"),
+                        QMessageBox.Yes | QMessageBox.No,
+                        defaultButton = QMessageBox.No
+                    )
+                    if confirm != QMessageBox.Yes:
+                        return
+
+            self.setPersoBulkMode(False)
         self.tabPersos.setEnabled(True)
-        index = c.index()
+
+    def refreshBulkAffectedCharacters(self): # Characters affected by a potential bulk-info modification
+        self.bulkAffectedCharacters = []
+        for character in self.lstCharacters.currentCharacters():
+            self.bulkAffectedCharacters.append(character.name())
+
+    def changeCurrentCharacter(self, character):
+        if character is None:
+            return
+
+        index = character.index()
 
         for w in [
             self.txtPersoName,
@@ -318,24 +562,25 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             w.setCurrentModelIndex(index)
 
         # Button color
-        self.updateCharacterColor(c.ID())
+        self.updateCharacterColor(character.ID())
 
         # Slider importance
-        self.updateCharacterImportance(c.ID())
+        self.updateCharacterImportance(character.ID())
 
         # POV state
-        self.updateCharacterPOVState(c.ID())
+        self.updateCharacterPOVState(character.ID())
 
         # Character Infos
         self.tblPersoInfos.setRootIndex(index)
 
         if self.mdlCharacter.rowCount(index):
-            self.updatePersoInfoView()
+            self.updatePersoInfoView(self.tblPersoInfos)
 
-    def updatePersoInfoView(self):
-        self.tblPersoInfos.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeToContents)
-        self.tblPersoInfos.horizontalHeader().setSectionResizeMode(1, QHeaderView.Stretch)
-        self.tblPersoInfos.verticalHeader().hide()
+    def updatePersoInfoView(self, infoView):
+        infoView.horizontalHeader().setStretchLastSection(True)
+        infoView.horizontalHeader().setMinimumSectionSize(20)
+        infoView.horizontalHeader().setMaximumSectionSize(500)
+        infoView.verticalHeader().hide()
 
     def updateCharacterColor(self, ID):
         c = self.mdlCharacter.getCharacterByID(ID)
@@ -363,7 +608,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             pass
 
     def deleteCharacter(self):
-        ID = self.lstCharacters.removeCharacter()
+        ID = self.lstCharacters.removeCharacters()
         if ID is None:
             return
         for itemID in self.mdlOutline.findItemsByPOV(ID):
@@ -377,10 +622,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def changeCurrentPlot(self):
         index = self.lstPlots.currentPlotIndex()
+        id = self.lstPlots.currentPlotID()
 
         if not index.isValid():
             self.tabPlot.setEnabled(False)
+            self.pushHistory(("plot", None))
+            self._previousSelectionEmpty = True
             return
+
+        self.pushHistory(("plot", id))
+        self._previousSelectionEmpty = False
 
         self.tabPlot.setEnabled(True)
         self.txtPlotName.setCurrentModelIndex(index)
@@ -450,7 +701,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         if not index.isValid():
             self.tabWorld.setEnabled(False)
+            self.pushHistory(("world", None))
+            self._previousSelectionEmpty = True
             return
+
+        self.pushHistory(("world", self.mdlWorld.ID(index)))
+        self._previousSelectionEmpty = False
 
         self.tabWorld.setEnabled(True)
         self.txtWorldName.setCurrentModelIndex(index)
@@ -461,6 +717,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     ###############################################################################
     # EDITOR
     ###############################################################################
+
+    def redacOutlineChanged(self):
+        index = self.treeRedacOutline.selectionModel().currentIndex()
+        if not index.isValid():
+            self.pushHistory(("redac", None))
+            self._previousSelectionEmpty = True
+            return
+        
+        self.pushHistory(("redac", self.mdlOutline.ID(index)))
+        self._previousSelectionEmpty = False
 
     def openIndex(self, index):
         self.treeRedacOutline.setCurrentIndex(index)
@@ -559,6 +825,92 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         "Merges selected item(s)."
         if self._lastFocus: self._lastFocus.merge()
 
+    # Navigate
+    
+    def navigateBack(self):
+        self.history.back()
+
+    def navigateForward(self):
+        self.history.forward()
+
+    def pushHistory(self, entry):
+        if self._previousSelectionEmpty:
+            self.history.replace(entry)
+        else:
+            self.history.next(entry)
+
+    def navigated(self, event):
+        if event.entry:
+            first_entry = event.entry[0]
+
+            if first_entry == "character":
+                if self.tabMain.currentIndex() != self.TabPersos:
+                    self.tabMain.setCurrentIndex(self.TabPersos)
+
+                if event.entry[1] is None:
+                    self.lstCharacters.setCurrentItem(None)
+                    self.lstCharacters.clearSelection()
+                else:
+                    if self.lstCharacters.currentCharacterID() != event.entry[1]:
+                        char = self.lstCharacters.getItemByID(event.entry[1])
+                        if char != None:
+                            self.lstCharacters.clearSelection()
+                            self.lstCharacters.setCurrentItem(char)
+            elif first_entry == "plot":
+                if self.tabMain.currentIndex() != self.TabPlots:
+                    self.tabMain.setCurrentIndex(self.TabPlots)
+
+                if event.entry[1] is None:
+                    self.lstPlots.setCurrentItem(None)
+                else:
+                    index = self.lstPlots.currentPlotIndex()
+                    if index and index.row() != event.entry[1]:
+                        plot = self.lstPlots.getItemByID(event.entry[1])
+                        if plot != None:
+                            self.lstPlots.setCurrentItem(plot)
+            elif first_entry == "world":
+                if self.tabMain.currentIndex() != self.TabWorld:
+                    self.tabMain.setCurrentIndex(self.TabWorld)
+
+                if event.entry[1] is None:
+                    self.treeWorld.selectionModel().clear()
+                else:
+                    index = self.mdlWorld.selectedIndex()
+                    if index and self.mdlWorld.ID(index) != event.entry[1]:
+                        world = self.mdlWorld.indexByID(event.entry[1])
+                        if world != None:
+                            self.treeWorld.setCurrentIndex(world)
+            elif first_entry == "outline":
+                if self.tabMain.currentIndex() != self.TabOutline:
+                    self.tabMain.setCurrentIndex(self.TabOutline)
+
+                if event.entry[1] is None:
+                    self.treeOutlineOutline.selectionModel().clear()
+                else:
+                    index = self.treeOutlineOutline.selectionModel().currentIndex()
+                    if index and self.mdlOutline.ID(index) != event.entry[1]:
+                        outline = self.mdlOutline.getIndexByID(event.entry[1])
+                        if outline is not None:
+                            self.treeOutlineOutline.setCurrentIndex(outline)
+            elif first_entry == "redac":
+                if self.tabMain.currentIndex() != self.TabRedac:
+                    self.tabMain.setCurrentIndex(self.TabRedac)
+
+                if event.entry[1] is None:
+                    self.treeRedacOutline.selectionModel().clear()
+                else:
+                    index = self.treeRedacOutline.selectionModel().currentIndex()
+                    if index and self.mdlOutline.ID(index) != event.entry[1]:
+                        outline = self.mdlOutline.getIndexByID(event.entry[1])
+                        if outline is not None:
+                            self.treeRedacOutline.setCurrentIndex(outline)
+            elif first_entry == "main":
+                if self.tabMain.currentIndex() != event.entry[1]:
+                    self.lstTabs.setCurrentRow(event.entry[1])
+
+        self.actBack.setEnabled(event.position > 0)
+        self.actForward.setEnabled(event.position < event.count - 1)
+
     ###############################################################################
     # LOAD AND SAVE
     ###############################################################################
@@ -568,6 +920,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         If ``loadFromFile`` is False, then it does not load datas from file.
         It assumes that the datas have been populated in a different way."""
+
+        # Convert project path to OS norm
+        project = os.path.normpath(project)
+
         if loadFromFile and not os.path.exists(project):
             LOGGER.warning("The file {} does not exist. Has it been moved or deleted?".format(project))
             F.statusMessage(
@@ -581,7 +937,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             # Load data
             self.loadEmptyDatas()
-            self.loadDatas(project)
+            
+            if not self.loadDatas(project):
+                self.closeProject()
+                return
 
         self.makeConnections()
 
@@ -635,6 +994,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             i.setEnabled(False)
         for i in [self.actSave, self.actSaveAs, self.actCloseProject,
                   self.menuEdit, self.menuView, self.menuOrganize,
+                  self.menuNavigate,
                   self.menuTools, self.menuHelp, self.actImport,
                   self.actCompile, self.actSettings]:
             i.setEnabled(True)
@@ -646,8 +1006,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.projectDirty = False
         QSettings().setValue("lastProject", project)
 
+        item = self.mdlOutline.rootItem
+        wc = item.data(Outline.wordCount)
+        self.sessionStartWordCount = int(wc) if wc != "" else 0
         # Add project name to Window's name
         self.setWindowTitle(self.projectName() + " - " + self.tr("Manuskript"))
+
+        # Reset history
+        self.history.reset()
 
         # Show main Window
         self.switchToProject()
@@ -789,6 +1155,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # closeEvent
             # QMainWindow.closeEvent(self, event)  # Causing segfaults?
 
+        # Close non-modal windows if they are open.
+        if self.td:
+            self.td.close()
+        if self.fw:
+            self.fw.close()
+
         # User may have canceled close event, so make sure we indeed want to close.
         # This is necessary because self.updateDockVisibility() hides UI elements.
         if event.isAccepted():
@@ -835,7 +1207,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # risk a scenario where the timer somehow triggers a new save while saving.
         self.saveTimerNoChanges.stop()
 
-        if self.currentProject == None:
+        if self.currentProject is None:
             # No UI feedback here as this code path indicates a race condition that happens
             # after the user has already closed the project through some way. But in that
             # scenario, this code should not be reachable to begin with.
@@ -866,7 +1238,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.mdlWorld = worldModel(self)
 
     def loadDatas(self, project):
-
         errors = loadSave.loadProject(project)
 
         # Giving some feedback
@@ -880,6 +1251,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 LOGGER.error(" * {} wasn't found in project file.".format(e))
             F.statusMessage(
                     self.tr("Project {} loaded with some errors.").format(project), 5000, importance = 3)
+        
+        if project in errors:
+            LOGGER.error("Loading project {} failed.".format(project))
+            F.statusMessage(
+                    self.tr("Loading project {} failed.").format(project), 5000, importance = 3)
+
+            return False
+        
+        return True
 
     ###############################################################################
     # MAIN CONNECTIONS
@@ -887,12 +1267,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def makeUIConnections(self):
         "Connections that have to be made once only, even when a new project is loaded."
-        self.lstCharacters.currentItemChanged.connect(self.changeCurrentCharacter, F.AUC)
+        # Characters
+        self.txtPersosFilter.textChanged.connect(self.lstCharacters.setFilter, F.AUC)
+        self.lstCharacters.itemSelectionChanged.connect(self.handleCharacterSelectionChanged, F.AUC)
 
+        # Plots
         self.txtPlotFilter.textChanged.connect(self.lstPlots.setFilter, F.AUC)
         self.lstPlots.currentItemChanged.connect(self.changeCurrentPlot, F.AUC)
         self.lstSubPlots.clicked.connect(self.changeCurrentSubPlot, F.AUC)
 
+        # Outline
         self.btnRedacAddFolder.clicked.connect(self.treeRedacOutline.addFolder, F.AUC)
         self.btnOutlineAddFolder.clicked.connect(self.treeOutlineOutline.addFolder, F.AUC)
         self.btnRedacAddText.clicked.connect(self.treeRedacOutline.addText, F.AUC)
@@ -902,6 +1286,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self.tabMain.currentChanged.connect(self.toolbar.setCurrentGroup)
         self.tabMain.currentChanged.connect(self.tabMainChanged)
+
+        self.history.navigated.connect(self.navigated)
 
         qApp.focusChanged.connect(self.focusChanged)
 
@@ -940,6 +1326,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             widget.setCurrentModelIndex(self.mdlFlatData.index(0, col))
 
         # Characters
+        self.updatePersoInfoView(self.tblPersoInfos)
         self.lstCharacters.setCharactersModel(self.mdlCharacter)
         self.tblPersoInfos.setModel(self.mdlCharacter)
         try:
@@ -1040,10 +1427,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # self.redacEditor.setModel(self.mdlOutline)
         self.storylineView.setModels(self.mdlOutline, self.mdlCharacter, self.mdlPlots)
 
+        self.treeOutlineOutline.selectionModel().selectionChanged.connect(self.outlineChanged, F.AUC)
         self.treeOutlineOutline.selectionModel().selectionChanged.connect(self.outlineItemEditor.selectionChanged, F.AUC)
         self.treeOutlineOutline.clicked.connect(self.outlineItemEditor.selectionChanged, F.AUC)
 
         # Sync selection
+        self.treeRedacOutline.selectionModel().selectionChanged.connect(self.redacOutlineChanged, F.AUC)
         self.treeRedacOutline.selectionModel().selectionChanged.connect(self.redacMetadata.selectionChanged, F.AUC)
         self.treeRedacOutline.clicked.connect(self.redacMetadata.selectionChanged, F.AUC)
 
@@ -1151,6 +1540,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 lambda: self.tblDebugSubPlots.setRootIndex(self.mdlPlots.index(
                         self.tblDebugPlots.selectionModel().currentIndex().row(),
                         Plot.steps)))
+        
+        self.disconnectAll(self.history.navigated)
 
     ###############################################################################
     # HELP
@@ -1391,7 +1782,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         dictionaries = Spellchecker.availableDictionaries()
 
         # Set first run dictionary
-        if settings.dict == None:
+        if settings.dict is None:
             settings.dict = Spellchecker.getDefaultDictionary()
 
         # Check if project dict is unavailable on this machine
@@ -1490,6 +1881,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.fw = frequencyAnalyzer(self)
         self.fw.show()
         self.centerChildWindow(self.fw)
+
+    def sessionTargets(self):
+        self.td = TargetsDialog(self)
+        self.td.show()
+        self.centerChildWindow(self.td)
 
     ###############################################################################
     # VIEW MENU
@@ -1602,7 +1998,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             w.cmbPOV.setVisible(val)
 
         # POV in outline view
-        if val == None and Outline.POV in settings.outlineViewColumns:
+        if val is None and Outline.POV in settings.outlineViewColumns:
             settings.outlineViewColumns.remove(Outline.POV)
 
         from manuskript.ui.views.outlineView import outlineView

@@ -23,14 +23,25 @@ AUC = Qt.AutoConnection | Qt.UniqueConnection
 MW = None
 
 
+translationCache = dict()
+
+def resetTranslation():
+    translationCache.clear()
+
 def safeTranslate(qApp, group, text):
+    if text in translationCache:
+        return translationCache[text]
+
     try:
-        return qApp.translate(group, text)
+        _text = qApp.translate(group, text)
+        translationCache[text] = _text
+        return _text
     except:
         return text
 
+
 def wordCount(text):
-    return len(re.findall(r"\S+", text))
+    return len(re.findall(r"\S+", re.sub(r"(<!--).+?(-->)", "", text, flags=re.DOTALL)))
 
 
 def charCount(text, use_spaces = True):
@@ -86,12 +97,11 @@ def toString(text):
 
 
 def drawProgress(painter, rect, progress, radius=0):
-    from manuskript.ui import style as S
-    progress = toFloat(progress)  # handle invalid input (issue #561)
     painter.setPen(Qt.NoPen)
-    painter.setBrush(QColor(S.base)) # "#dddddd"
+    painter.setBrush(QBrush(colorFromProgress(None)))
     painter.drawRoundedRect(rect, radius, radius)
 
+    progress = toFloat(progress)
     painter.setBrush(QBrush(colorFromProgress(progress)))
 
     r2 = QRect(rect)
@@ -100,6 +110,11 @@ def drawProgress(painter, rect, progress, radius=0):
 
 
 def colorFromProgress(progress):
+    c0 = QColor("#00000000")
+
+    if progress is None:
+        return c0
+
     progress = toFloat(progress)
     c1 = QColor(Qt.red)
     c2 = QColor(Qt.blue)
@@ -202,7 +217,6 @@ def mixColors(col1, col2, f=0.5):
 
 
 def outlineItemColors(item):
-
     from manuskript.ui import style as S
 
     """Takes an OutlineItem and returns a dict of colors."""
@@ -231,7 +245,7 @@ def outlineItemColors(item):
     colors["Label"] = col
 
     # Progress
-    pg = item.data(Outline.goalPercentage)
+    pg = item.data(Outline.goalPercentage) if item.data(Outline.setGoal) else None
     colors["Progress"] = colorFromProgress(pg)
 
     # Compile
@@ -252,7 +266,7 @@ def colorifyPixmap(pixmap, color):
 
 
 def appPath(suffix=None):
-    p = os.path.realpath(os.path.join(os.path.split(__file__)[0], "../.."))
+    p = os.path.realpath(os.path.join(os.path.split(__file__)[0], os.path.join("..", "..")))
     if suffix:
         p = os.path.join(p, suffix)
     return p
@@ -305,7 +319,7 @@ def findBackground(filename):
     """
     Returns the full path to a background file of name filename within resources folders.
     """
-    return findFirstFile(re.escape(filename), "resources/backgrounds")
+    return findFirstFile(re.escape(filename), os.path.join("resources", "backgrounds"))
 
 
 def findFirstFile(regex, path="resources"):
@@ -469,7 +483,7 @@ def search(searchRegex, text):
     :return:                list of tuples (startPos, endPos)
     """
     if text is not None:
-        return [(m.start(), m.end(), getSearchResultContext(text, m.start(), m.end())) for m in searchRegex.finditer(text)]
+        return [(m.start(), m.end(), getSearchResultContext(text, m.start(), m.end())) for m in searchRegex.finditer(str(text))]
     else:
         return []
 
@@ -511,7 +525,7 @@ def getManuskriptPath(follow_symlinks=True):
         path = os.path.abspath(sys.executable)
     else:
         import inspect
-        path = inspect.getabsfile(getManuskriptPath) + "/../.."
+        path = os.path.join(inspect.getabsfile(getManuskriptPath), "..", "..")
     if follow_symlinks:
         path = os.path.realpath(path)
     return os.path.dirname(path)

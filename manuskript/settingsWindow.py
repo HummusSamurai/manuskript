@@ -40,6 +40,7 @@ class settingsWindow(QWidget, Ui_Settings):
                   self.lblTitleLabels,
                   self.lblTitleStatus,
                   self.lblTitleFullscreen,
+                  self.lblTitleStyle,
                   ]:
             l.setStyleSheet(S.titleLabelSS())
 
@@ -48,7 +49,8 @@ class settingsWindow(QWidget, Ui_Settings):
                  QIcon.fromTheme("gnome-settings"),
                  themeIcon("label"),
                  themeIcon("status"),
-                 QIcon.fromTheme("preferences-desktop-theme")
+                 QIcon.fromTheme("preferences-desktop-theme"),
+                 QIcon.fromTheme("color-picker")
                 ]
         for i in range(self.lstMenu.count()):
             item = self.lstMenu.item(i)
@@ -308,6 +310,17 @@ class settingsWindow(QWidget, Ui_Settings):
         self.timerUpdateFSPreview.setInterval(250)
         self.timerUpdateFSPreview.timeout.connect(self.updatePreview)
 
+        # Style - Tooltips  
+        self.chkUseSystemTooltips.setChecked(settings.tooltipStyle["useSystemDefaultsForTooltips"])
+        self.chkUseSystemTooltips.stateChanged.connect(self.toggleTooltipCustomization)
+        self.setButtonColor(self.btnTooltipTextColor, settings.tooltipStyle["textColor"])
+        self.btnTooltipTextColor.clicked.connect(self.chooseTooltipTextColor)
+        self.setButtonColor(self.btnTooltipBackgroundColor, settings.tooltipStyle["backgroundColor"])
+        self.btnTooltipBackgroundColor.clicked.connect(self.chooseTooltipBackgroundColor)
+        self.setButtonColor(self.btnTooltipBorderColor, settings.tooltipStyle["borderColor"])
+        self.btnTooltipBorderColor.clicked.connect(self.chooseTooltipBorderColor)
+        self.updateTooltipControlsState()
+
     def setTab(self, tab):
 
         tabs = {
@@ -316,6 +329,7 @@ class settingsWindow(QWidget, Ui_Settings):
             "Labels": 2,
             "Status": 3,
             "Fullscreen": 4,
+            "Style": 5,
         }
 
         if tab in tabs:
@@ -513,7 +527,7 @@ class settingsWindow(QWidget, Ui_Settings):
         # self.cmbDelegate = cmbPixmapDelegate()
         # self.cmbCorkImage.setItemDelegate(self.cmbDelegate)
 
-        paths = allPaths("resources/backgrounds")
+        paths = allPaths(os.path.join("resources", "backgrounds"))
         cmb.clear()
         cmb.addItem(QIcon.fromTheme("list-remove"), "", "")
         for p in paths:
@@ -534,14 +548,14 @@ class settingsWindow(QWidget, Ui_Settings):
         filename = QFileDialog.getOpenFileName(self,
                                                self.tr("Open Image"),
                                                lastDirectory,
-                                               self.tr("Image files (*.jpg; *.jpeg; *.png)"))[0]
+                                               self.tr("Image files") + " (*.png *.jpg *.jpeg);;*.* (*.*)")[0]
         if filename:
             try:
                 px = QPixmap()
                 valid = px.load(filename)
                 del px
                 if valid:
-                    shutil.copy(filename, writablePath("resources/backgrounds"))
+                    shutil.copy(filename, writablePath(os.path.join("resources", "backgrounds")))
                     return os.path.basename(filename)
                 else:
                     QMessageBox.warning(self, self.tr("Error"),
@@ -727,7 +741,7 @@ class settingsWindow(QWidget, Ui_Settings):
             self.btnThemeRemove.setEnabled(False)
 
     def newTheme(self):
-        path = writablePath("resources/themes")
+        path = writablePath(os.path.join("resources", "themes"))
         name = self.tr("newtheme")
         if os.path.exists(os.path.join(path, "{}.theme".format(name))):
             i = 1
@@ -756,7 +770,7 @@ class settingsWindow(QWidget, Ui_Settings):
         self.populatesThemesList()
 
     def populatesThemesList(self):
-        paths = allPaths("resources/themes")
+        paths = allPaths(os.path.join("resources", "themes"))
         current = settings.fullScreenTheme
         self.lstThemes.clear()
 
@@ -1000,3 +1014,62 @@ class settingsWindow(QWidget, Ui_Settings):
         QWidget.resizeEvent(self, event)
         if self._editingTheme:
             self.updatePreview()
+
+        ####################################################################################################
+        #                                           STYLE                                                  #
+        ####################################################################################################
+
+    def chooseTooltipTextColor(self):
+        color = settings.tooltipStyle["textColor"]
+        self.colorDialog = QColorDialog(QColor(color), self)
+        color = self.colorDialog.getColor(QColor(color))
+        if color.isValid():
+            settings.tooltipStyle["textColor"] = color.name()
+            self.setButtonColor(self.btnTooltipTextColor, color.name())
+            self.updateTooltipStyle()
+
+    def chooseTooltipBackgroundColor(self):
+        color = settings.tooltipStyle["backgroundColor"]
+        self.colorDialog = QColorDialog(QColor(color), self)
+        color = self.colorDialog.getColor(QColor(color))
+        if color.isValid():
+            settings.tooltipStyle["backgroundColor"] = color.name()
+            self.setButtonColor(self.btnTooltipBackgroundColor, color.name())
+            self.updateTooltipStyle()
+
+    def chooseTooltipBorderColor(self):
+        color = settings.tooltipStyle["borderColor"]
+        self.colorDialog = QColorDialog(QColor(color), self)
+        color = self.colorDialog.getColor(QColor(color))
+        if color.isValid():
+            settings.tooltipStyle["borderColor"] = color.name()
+            self.setButtonColor(self.btnTooltipBorderColor, color.name())
+            self.updateTooltipStyle()
+
+    def toggleTooltipCustomization(self):
+        settings.tooltipStyle["useSystemDefaultsForTooltips"] = self.chkUseSystemTooltips.isChecked()
+        self.updateTooltipControlsState()
+        self.updateTooltipStyle()
+
+    def updateTooltipControlsState(self):
+        visible = not settings.tooltipStyle["useSystemDefaultsForTooltips"]
+        self.lblTooltipTextColor.setVisible(visible)
+        self.btnTooltipTextColor.setVisible(visible)
+        self.lblTooltipBackgroundColor.setVisible(visible)
+        self.btnTooltipBackgroundColor.setVisible(visible)
+        self.lblTooltipBorderColor.setVisible(visible)
+        self.btnTooltipBorderColor.setVisible(visible)
+        
+        # Adjust layout spacing when controls are hidden/shown
+        if visible:
+            self.formLayout_tooltips.setContentsMargins(9, 9, 9, 9)
+        else:
+            self.formLayout_tooltips.setContentsMargins(9, 9, 9, 0)
+
+    def updateTooltipStyle(self):
+        # Apply the new tooltip style immediately
+        if settings.tooltipStyle["useSystemDefaultsForTooltips"]:
+            # Clear any custom tooltip styling to use system defaults
+            qApp.setStyleSheet("")
+        else:
+            qApp.setStyleSheet(f"QToolTip {{ color: {settings.tooltipStyle['textColor']}; background-color: {settings.tooltipStyle['backgroundColor']}; border: 1px solid {settings.tooltipStyle['borderColor']}; }}")

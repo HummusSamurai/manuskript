@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # --!-- coding: utf8 --!--
-import locale
+import locale, os
 
 from PyQt5.QtCore import QModelIndex, QRect, QPoint
 from PyQt5.QtCore import Qt
@@ -95,11 +95,11 @@ class mainEditor(QWidget, Ui_mainEditor):
         # Cf. https://github.com/qtproject/qtbase/commit/a8621a3f85e64f1252a80ae81a6e22554f7b3f44
         # Since those are important, we provide fallback.
         self.btnRedacFolderCork.setIcon(QIcon.fromTheme("view-cards",
-                                        QIcon(appPath("icons/NumixMsk/256x256/actions/view-cards.svg"))))
+                                        QIcon(appPath(os.path.join("icons", "NumixMsk", "256x256", "actions", "view-cards.svg")))))
         self.btnRedacFolderOutline.setIcon(QIcon.fromTheme("view-outline",
-                                           QIcon(appPath("icons/NumixMsk/256x256/actions/view-outline.svg"))))
+                                           QIcon(appPath(os.path.join("icons", "NumixMsk", "256x256", "actions", "view-outline.svg")))))
         self.btnRedacFolderText.setIcon(QIcon.fromTheme("view-text",
-                                        QIcon(appPath("icons/NumixMsk/256x256/actions/view-text.svg"))))
+                                        QIcon(appPath(os.path.join("icons", "NumixMsk", "256x256", "actions", "view-text.svg")))))
 
         for btn in [self.btnRedacFolderCork, self.btnRedacFolderText, self.btnRedacFolderOutline]:
             btn.setToolTip(btn.text())
@@ -127,7 +127,6 @@ class mainEditor(QWidget, Ui_mainEditor):
         if tabWidget == None:
             tabWidget = self.currentTabWidget()
         return tabWidget.currentWidget()
-        # return self.tab.currentWidget()
 
     def tabChanged(self, index=QModelIndex()):
         if self.currentEditor():
@@ -143,6 +142,9 @@ class mainEditor(QWidget, Ui_mainEditor):
         self.updateThingsVisible(index)
 
     def updateMainTreeView(self, index):
+        if not index.isValid():
+            return
+
         self._updating = True
         self.mw.treeRedacOutline.setCurrentIndex(index)
         self._updating = False
@@ -214,6 +216,11 @@ class mainEditor(QWidget, Ui_mainEditor):
         title = self.getIndexTitle(index)
 
         if tabWidget == None:
+            # no tabWidget specified, update all tabs of views that are a target
+            for ts in self.allTabSplitters():
+                if ts.isTarget:
+                    self.setCurrentModelIndex(index, newTab, tabWidget=ts.tab)
+            # additionally always update the current tabWidget
             tabWidget = self.currentTabWidget()
 
         # Checking if tab is already opened
@@ -258,17 +265,49 @@ class mainEditor(QWidget, Ui_mainEditor):
     # FUNCTIONS FOR MENU ACCESS
     ###############################################################################
 
-    def copy(self): self.currentEditor().copy()
-    def cut(self): self.currentEditor().cut()
-    def paste(self): self.currentEditor().paste()
-    def rename(self): self.currentEditor().rename()
-    def duplicate(self): self.currentEditor().duplicate()
-    def delete(self): self.currentEditor().delete()
-    def moveUp(self): self.currentEditor().moveUp()
-    def moveDown(self): self.currentEditor().moveDown()
-    def splitDialog(self): self.currentEditor().splitDialog()
-    def splitCursor(self): self.currentEditor().splitCursor()
-    def merge(self): self.currentEditor().merge()
+    def copy(self):
+        if self.currentEditor():
+            self.currentEditor().copy()
+    
+    def cut(self):
+        if self.currentEditor():
+            self.currentEditor().cut()
+    
+    def paste(self):
+        if self.currentEditor():
+            self.currentEditor().paste()
+    
+    def rename(self):
+        if self.currentEditor():
+            self.currentEditor().rename()
+    
+    def duplicate(self):
+        if self.currentEditor():
+            self.currentEditor().duplicate()
+    
+    def delete(self):
+        if self.currentEditor():
+            self.currentEditor().delete()
+    
+    def moveUp(self):
+        if self.currentEditor():
+            self.currentEditor().moveUp()
+    
+    def moveDown(self):
+        if self.currentEditor():
+            self.currentEditor().moveDown()
+    
+    def splitDialog(self):
+        if self.currentEditor():
+            self.currentEditor().splitDialog()
+    
+    def splitCursor(self):
+        if self.currentEditor():
+            self.currentEditor().splitCursor()
+    
+    def merge(self):
+        if self.currentEditor():
+            self.currentEditor().merge()
 
     ###############################################################################
     # UI
@@ -337,28 +376,28 @@ class mainEditor(QWidget, Ui_mainEditor):
 
             if settings.progressChars:
                 self.lblRedacWC.setText(self.tr("({} chars) {}  words / {} ").format(
-                        locale.format("%d", cc, grouping=True),
-                        locale.format("%d", wc, grouping=True),
-                        locale.format("%d", goal, grouping=True)))
+                        locale.format_string("%d", cc, grouping=True),
+                        locale.format_string("%d", wc, grouping=True),
+                        locale.format_string("%d", goal, grouping=True)))
                 self.lblRedacWC.setToolTip("")
             else:
                 self.lblRedacWC.setText(self.tr("{}  words / {} ").format(
-                        locale.format("%d", wc, grouping=True),
-                        locale.format("%d", goal, grouping=True)))
+                        locale.format_string("%d", wc, grouping=True),
+                        locale.format_string("%d", goal, grouping=True)))
                 self.lblRedacWC.setToolTip(self.tr("{} chars").format(
-                        locale.format("%d", cc, grouping=True)))
+                        locale.format_string("%d", cc, grouping=True)))
         else:
             self.lblRedacProgress.hide()
 
             if settings.progressChars:
                 self.lblRedacWC.setText(self.tr("{} chars ").format(
-                        locale.format("%d", cc, grouping=True)))
+                        locale.format_string("%d", cc, grouping=True)))
                 self.lblRedacWC.setToolTip("")
             else:
                 self.lblRedacWC.setText(self.tr("{} words ").format(
-                        locale.format("%d", wc, grouping=True)))
+                        locale.format_string("%d", wc, grouping=True)))
                 self.lblRedacWC.setToolTip(self.tr("{} chars").format(
-                        locale.format("%d", cc, grouping=True)))
+                        locale.format_string("%d", cc, grouping=True)))
 
     ###############################################################################
     # VIEWS

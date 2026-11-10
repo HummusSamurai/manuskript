@@ -58,20 +58,15 @@ class textEditView(QTextEdit):
         self._dict = None
         self._tooltip = { 'depth' : 0, 'active' : 0 }
 
-        # self.document().contentsChanged.connect(self.submit, F.AUC)
-
         # Submit text changed only after 500ms without modifications
         self.updateTimer = QTimer()
+        self.updateTimer.destroyed.connect(self.cleanupTimer)
         self.updateTimer.setInterval(500)
         self.updateTimer.setSingleShot(True)
         self.updateTimer.timeout.connect(self.submit)
-        # self.updateTimer.timeout.connect(lambda: LOGGER.debug("Timeout."))
 
         self.updateTimer.stop()
-        self.document().contentsChanged.connect(self.updateTimer.start, F.AUC)
-        # self.document().contentsChanged.connect(lambda: LOGGER.debug("Document changed."))
-
-        # self.document().contentsChanged.connect(lambda: LOGGER.debug("Contents changed: %s", self.objectName()))
+        self.updateTimerConnection = self.document().contentsChanged.connect(self.updateTimer.start, F.AUC)
 
         self.setEnabled(False)
 
@@ -92,6 +87,14 @@ class textEditView(QTextEdit):
         if self._highlighting and not self.highlighter:
             self.highlighter = self._highlighterClass(self)
             self.highlighter.setDefaultBlockFormat(self._defaultBlockFormat)
+    
+    def cleanupTimer(self):
+        if self.updateTimer:
+            self.disconnectDocument()
+            self.updateTimer = None
+    
+    def __del__(self):
+        self.cleanupTimer()
 
     def setModel(self, model):
         self._model = model
@@ -274,13 +277,20 @@ class textEditView(QTextEdit):
             self.updateText()
 
     def disconnectDocument(self):
+        if not self.updateTimerConnection:
+            return
+
         try:
-            self.document().contentsChanged.disconnect(self.updateTimer.start)
+            self.document().contentsChanged.disconnect(self.updateTimerConnection)
+            self.updateTimerConnection = None
         except:
             pass
 
     def reconnectDocument(self):
-        self.document().contentsChanged.connect(self.updateTimer.start, F.AUC)
+        if not self.updateTimer or self.updateTimerConnection:
+            return
+
+        self.updateTimerConnection = self.document().contentsChanged.connect(self.updateTimer.start, F.AUC)
 
     def toIdealText(self):
         """QTextDocument::toPlainText() replaces NBSP with spaces, which we don't want.
@@ -327,7 +337,8 @@ class textEditView(QTextEdit):
         self._updating.unlock()
 
     def submit(self):
-        self.updateTimer.stop()
+        if self.updateTimer:
+            self.updateTimer.stop()
 
         self._updating.lock()
         text = self.toIdealText()
@@ -569,7 +580,7 @@ class textEditView(QTextEdit):
         suggestions = []
 
         # Check for any suggestions for corrections at the cursors position
-        if self._dict != None:
+        if self._dict is not None:
             text = self.toPlainText()
 
             suggestions = self._dict.findSuggestions(text, cursor.selectionStart(), cursor.selectionEnd())
@@ -598,7 +609,7 @@ class textEditView(QTextEdit):
 
         popup_menu = self.appendContextMenuEntriesForWord(popup_menu, selectedWord)
 
-        if len(suggestions) > 0 or selectedWord != None:
+        if len(suggestions) > 0 or selectedWord is not None:
             valid = len(suggestions) == 0
 
             if not valid:
@@ -611,7 +622,7 @@ class textEditView(QTextEdit):
                     spell_menu = QMenu(self.tr('Spelling Suggestions'), self)
                     spell_menu.setIcon(F.themeIcon("spelling"))
 
-                    if (match.end > match.start and selectedWord == None):
+                    if match.end > match.start and selectedWord is None:
                         # Select the actual area of the match
                         cursor = self.textCursor()
                         cursor.setPosition(match.start, QTextCursor.MoveAnchor);
@@ -620,10 +631,11 @@ class textEditView(QTextEdit):
 
                         selectedWord = cursor.selectedText()
 
-                    for word in match.replacements:
-                        action = self.SpellAction(word, spell_menu)
-                        action.correct.connect(self.correctWord)
-                        spell_menu.addAction(action)
+                    if match.replacements:
+                        for word in match.replacements:
+                            action = self.SpellAction(word, spell_menu)
+                            action.correct.connect(self.correctWord)
+                            spell_menu.addAction(action)
 
                     # Adds: add to dictionary
                     addAction = QAction(self.tr("&Add to dictionary"), popup_menu)
@@ -635,14 +647,14 @@ class textEditView(QTextEdit):
 
                     # Only add the spelling suggests to the menu if there are
                     # suggestions.
-                    if len(match.replacements) > 0:
+                    if match.replacements and len(match.replacements) > 0:
                         # Adds: suggestions
                         popup_menu.insertMenu(popup_menu.actions()[0], spell_menu)
                 else:
                     correct_menu = None
                     correct_action = None
 
-                    if (len(match.replacements) > 0 and match.end > match.start):
+                    if len(match.replacements) > 0 and match.end > match.start:
                         # Select the actual area of the match
                         cursor = self.textCursor()
                         cursor.setPosition(match.start, QTextCursor.MoveAnchor);
@@ -658,7 +670,7 @@ class textEditView(QTextEdit):
                                 action.correct.connect(self.correctWord)
                                 correct_menu.addAction(action)
 
-                    if correct_menu == None:
+                    if correct_menu is None:
                         correct_action = QAction(self.tr('&Correction Suggestion'), popup_menu)
                         correct_action.setIcon(F.themeIcon("spelling"))
                         correct_action.setEnabled(False)
@@ -670,10 +682,10 @@ class textEditView(QTextEdit):
                     for i in range(0, len(msg_lines)):
                         popup_menu.insertSection(popup_menu.actions()[0], msg_lines[len(msg_lines) - (i + 1)])
 
-                    if correct_menu != None:
-                        popup_menu.insertMenu(popup_menu.actions()[0], correct_menu)
-                    else:
+                    if correct_menu is None:
                         popup_menu.insertAction(popup_menu.actions()[0], correct_action)
+                    else:
+                        popup_menu.insertMenu(popup_menu.actions()[0], correct_menu)
 
             # If word was added to custom dict, give the possibility to remove it
             elif self._dict.isCustomWord(selectedWord):
@@ -737,3 +749,4 @@ class textEditView(QTextEdit):
     def duplicate(self): self.callMainTreeView("duplicate")
     def moveUp(self): self.callMainTreeView("moveUp")
     def moveDown(self): self.callMainTreeView("moveDown")
+    def delete(self): self.callMainTreeView("delete")

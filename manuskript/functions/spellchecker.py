@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # --!-- coding: utf8 --!--
 
-import os, gzip, json, glob, re
+import os, gzip, json, glob, re, string
 from PyQt5.QtCore import QLocale
 from collections import OrderedDict
 from manuskript.functions import writablePath
@@ -21,9 +21,10 @@ try:
     import symspellpy
     import distutils.version
 
-    if distutils.version.LooseVersion(symspellpy.__version__) < SYMSPELLPY_MIN_VERSION:
+    if ((not hasattr(symspellpy, '__version__')) or
+        (distutils.version.LooseVersion(symspellpy.__version__) < SYMSPELLPY_MIN_VERSION)):
         symspellpy = None
-    
+
 except ImportError:
     symspellpy = None
 
@@ -148,7 +149,7 @@ class BasicDictionary:
         self._customDict = set()
         customPath = self.getCustomDictionaryPath()
         try:
-            with gzip.open(customPath, "rt", encoding='utf-8') as f:
+            with gzip.open(customPath, 'rt', encoding='utf-8') as f:
                 self._customDict = set(json.loads(f.read()))
                 for word in self._customDict:
                     self._dict.create_dictionary_entry(word, self.CUSTOM_COUNT)
@@ -187,6 +188,7 @@ class BasicDictionary:
     def checkText(self, text):
         # Based on http://john.nachtimwald.com/2009/08/22/qplaintextedit-with-in-line-spell-check/
         WORDS = r'(?iu)((?:[^_\W]|\')+)[^A-Za-z0-9\']'
+        
         #         (?iu) means case insensitive and Unicode
         #              ((?:[^_\W]|\')+) means words exclude underscores but include apostrophes
         #                              [^A-Za-z0-9\'] used with above hack to prevent spellcheck while typing word
@@ -197,8 +199,30 @@ class BasicDictionary:
 
         for word_object in re.finditer(WORDS, text):
             word = word_object.group(1)
+            mispelled = self.isMisspelled(word)
+            if mispelled == False:
+                continue
+            punctuation = string.punctuation.replace('-', '')
 
-            if (self.isMisspelled(word) and not self.isCustomWord(word)):
+            FALSE_POSITIVE = r'^[^\w]|([^{}])$'.format(punctuation)
+
+            #inorder to prevent apostrophes causing false positives and keep the same functionality otherwise,
+            #check that the word doesn't have any additional punctuation on it.
+            if re.match(FALSE_POSITIVE, word):
+                # ^[^\w] checks that it doesn't start with a word character
+                # ([\p{P}'])$ checks it doesn't end with punctuation characters
+
+                apostrophe_WORDS = r'(?iu)\b(?<=[\s\'"(])((?:[a-zA-Z]|\')+)(?=\b)'
+
+                # \b(?<=[\s\'"(]) looks for nonword characters and starts grouping after
+                # (?=\b) looks for the word boundary
+                # ((?:[a-zA-Z]|\')+) greedily matches for letters and apostrophes
+                
+                temp = re.match(apostrophe_WORDS, word)
+                mispelled = self.isMisspelled(temp.group(1)) if temp else False
+
+            if (mispelled and not self.isCustomWord(word)):
+
                 matches.append(BasicMatch(
                     word_object.start(1), word_object.end(1)
                 ))
@@ -250,7 +274,7 @@ class BasicDictionary:
 
     def _saveCustomDict(self):
         customPath = self.getCustomDictionaryPath()
-        with gzip.open(customPath, "wt") as f:
+        with gzip.open(customPath, "wt", newline="\n") as f:
             f.write(json.dumps(list(self._customDict)))
 
 
@@ -363,7 +387,7 @@ class PySpellcheckerDictionary(BasicDictionary):
 
     def getSuggestions(self, word):
         candidates = self._dict.candidates(word)
-        if word in candidates:
+        if candidates and word in candidates:
             candidates.remove(word)
         return candidates
 
@@ -393,7 +417,7 @@ class SymSpellDictionary(BasicDictionary):
             if pyspellchecker:
                 path = os.path.join(pyspellchecker.__path__[0], "resources", "{}.json.gz".format(self.name))
                 if os.path.exists(path):
-                    with gzip.open(path, "rt", encoding='utf-8') as f:
+                    with gzip.open(path, 'rt', encoding='utf-8') as f:
                         data = json.loads(f.read())
                         for key in data:
                             self._dict.create_dictionary_entry(key, data[key])
@@ -481,13 +505,13 @@ def get_languagetool_match_errorLength(match):
     if use_language_check:
         return match.errorlength
     else:
-        return match.errorLength
+        return match.error_length
 
 def get_languagetool_match_ruleIssueType(match):
     if use_language_check:
         return match.locqualityissuetype
     else:
-        return match.ruleIssueType
+        return match.rule_issue_type
 
 def get_languagetool_match_message(match):
     if use_language_check:

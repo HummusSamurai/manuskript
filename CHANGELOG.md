@@ -1,5 +1,169 @@
 # Changelog
 
+## [0.17.0](https://github.com/olivierkes/manuskript/tree/0.17.0)
+
+[Full Changelog](https://github.com/olivierkes/manuskript/compare/0.16.1...HEAD)
+
+**Implemented enhancements:**
+
+- Confirmation popup for deleting items [\#1258](https://github.com/olivierkes/manuskript/issues/1258)
+- Feature creep [\#1236](https://github.com/olivierkes/manuskript/issues/1236)
+- Fullscreen mode [\#1161](https://github.com/olivierkes/manuskript/issues/1161)
+- \[Feature request\] Shortcut for Grouping Text into a Folder [\#453](https://github.com/olivierkes/manuskript/issues/453)
+
+**Fixed bugs:**
+
+- Unhandled exception in metadataView [\#1367](https://github.com/olivierkes/manuskript/issues/1367)
+- Unhandled exception in delete\(\) [\#1366](https://github.com/olivierkes/manuskript/issues/1366)
+- MDEditView object has no attribute 'delete' [\#1364](https://github.com/olivierkes/manuskript/issues/1364)
+- Manuskript crashed and isn't reopening via control panel [\#1362](https://github.com/olivierkes/manuskript/issues/1362)
+- Setting Background Color of Tree to "Progress" shows texts/folders without goals as red [\#1353](https://github.com/olivierkes/manuskript/issues/1353)
+- Crash when opening file, possibly due to platform incompatibility  [\#1348](https://github.com/olivierkes/manuskript/issues/1348)
+- Cant change the number on the Top level [\#1340](https://github.com/olivierkes/manuskript/issues/1340)
+- Crash when adding a character to a main plot in the Plots section [\#1329](https://github.com/olivierkes/manuskript/issues/1329)
+- Crash when opening one specific .msk [\#1323](https://github.com/olivierkes/manuskript/issues/1323)
+- Crash when pressing delete in edit box after cutting text out [\#1321](https://github.com/olivierkes/manuskript/issues/1321)
+- Manuskript crashes when attempting search [\#1313](https://github.com/olivierkes/manuskript/issues/1313)
+- never mind this because not reproducible for the time being [\#1309](https://github.com/olivierkes/manuskript/issues/1309)
+- Program crashes if project contains a PDF file [\#1308](https://github.com/olivierkes/manuskript/issues/1308)
+- Chapter Count ignored [\#1305](https://github.com/olivierkes/manuskript/issues/1305)
+- Manuskript 0.16.1 crashes after a while of being opened [\#1302](https://github.com/olivierkes/manuskript/issues/1302)
+- Crash By Clicking Outline [\#1299](https://github.com/olivierkes/manuskript/issues/1299)
+- Crash on character detailed info [\#1289](https://github.com/olivierkes/manuskript/issues/1289)
+- Crash on Silverblue [\#1277](https://github.com/olivierkes/manuskript/issues/1277)
+- I have too many Characters for selection! [\#1255](https://github.com/olivierkes/manuskript/issues/1255)
+- Filter in Character and World doesn't work [\#1253](https://github.com/olivierkes/manuskript/issues/1253)
+- Cannot start Manuskript on Ubuntu 22.04.3 [\#1203](https://github.com/olivierkes/manuskript/issues/1203)
+- Crashing when opening Manuskript + broken .msk file  [\#1180](https://github.com/olivierkes/manuskript/issues/1180)
+- Version 0.15.0 crashes on Windows 11, Version 0.14.0 is fine [\#1152](https://github.com/olivierkes/manuskript/issues/1152)
+- Broken .msk file / crash possibly related to loading process? [\#1147](https://github.com/olivierkes/manuskript/issues/1147)
+- Error while loading version of the msk format [\#1030](https://github.com/olivierkes/manuskript/issues/1030)
+- Seg fault after upgrading to KDE Plasma 5.24.0 \(Qt 5.13.3\) [\#1011](https://github.com/olivierkes/manuskript/issues/1011)
+- On Chromebook using the Linux shell, I hit the outline button on the left and it crashes- not the only button that does it.   [\#926](https://github.com/olivierkes/manuskript/issues/926)
+
+**Closed issues:**
+
+- Serbia [\#1350](https://github.com/olivierkes/manuskript/issues/1350)
+- A Humble Request for an 32bit version [\#1344](https://github.com/olivierkes/manuskript/issues/1344)
+- possible Trojan? [\#1342](https://github.com/olivierkes/manuskript/issues/1342)
+- Wrong Accelerator Key [\#1334](https://github.com/olivierkes/manuskript/issues/1334)
+- Windows 11 Defender flags manuskript-0.16.1-windows.zip as PUA:Win32/Vigua.A [\#1325](https://github.com/olivierkes/manuskript/issues/1325)
+- Manuskript closing unexpectedly [\#1271](https://github.com/olivierkes/manuskript/issues/1271)
+
+**Merged pull requests:**
+
+- Create requirements.txt [\#1371](https://github.com/olivierkes/manuskript/pull/1371) ([gabriel96x1](https://github.com/gabriel96x1))
+- Remove Color from Outline Items without Goal [\#1359](https://github.com/olivierkes/manuskript/pull/1359) ([SpeedyDoggo](https://github.com/SpeedyDoggo))
+- Update manuskript\_zh\_CN.ts [\#1339](https://github.com/olivierkes/manuskript/pull/1339) ([fattybamboo](https://github.com/fattybamboo))
+- fix: when loading ignores files that are not text files. [\#1332](https://github.com/olivierkes/manuskript/pull/1332) ([AlexBCa](https://github.com/AlexBCa))
+- Feature/add dan wells 7 point plot [\#1327](https://github.com/olivierkes/manuskript/pull/1327) ([ignogueiras](https://github.com/ignogueiras))
+- Fix crash when clicking outline [\#1315](https://github.com/olivierkes/manuskript/pull/1315) ([ByteOfBrie](https://github.com/ByteOfBrie))
+- Fix ipython import [\#1310](https://github.com/olivierkes/manuskript/pull/1310) ([ByteOfBrie](https://github.com/ByteOfBrie))
+- Fixed grammar error in "Revision Smart Remove" description [\#1298](https://github.com/olivierkes/manuskript/pull/1298) ([samarlyka](https://github.com/samarlyka))
+- Fixing outlineView.py to enable the outline to show full Title [\#557](https://github.com/olivierkes/manuskript/pull/557) ([BlackXanthus](https://github.com/BlackXanthus))
+
+## [0.16.1](https://github.com/olivierkes/manuskript/tree/0.16.1) (2023-12-14)
+
+[Full Changelog](https://github.com/olivierkes/manuskript/compare/0.16.0...0.16.1)
+
+**Fixed bugs:**
+
+- Characters, Plots and Worlds are greyed out [\#1249](https://github.com/olivierkes/manuskript/issues/1249)
+- Crash when opening old projects [\#1250](https://github.com/olivierkes/manuskript/issues/1250)
+- Missing Pages with Version 0.16.0 [\#1248](https://github.com/olivierkes/manuskript/issues/1248)
+- Software crashing every time I open [\#1247](https://github.com/olivierkes/manuskript/issues/1247)
+
+## [0.16.0](https://github.com/olivierkes/manuskript/tree/0.16.0) (2023-12-07)
+
+[Full Changelog](https://github.com/olivierkes/manuskript/compare/0.15.0...0.16.0)
+
+**Fixed bugs:**
+
+- my manuskript is not launching i don't know why [\#1207](https://github.com/olivierkes/manuskript/issues/1207)
+- cannot download to ubuntu [\#1199](https://github.com/olivierkes/manuskript/issues/1199)
+- LanguageTool crashes app [\#1143](https://github.com/olivierkes/manuskript/issues/1143)
+- can't load LanguageTool [\#1142](https://github.com/olivierkes/manuskript/issues/1142)
+- Crash on spellcheck context menu [\#1224](https://github.com/olivierkes/manuskript/issues/1224)
+- Trouble launching 0.15 in Windows 10 Home [\#1222](https://github.com/olivierkes/manuskript/issues/1222)
+- Crash on Search [\#1218](https://github.com/olivierkes/manuskript/issues/1218)
+- Crash on Mac not on windows with same project [\#1169](https://github.com/olivierkes/manuskript/issues/1169)
+- Fedora 38 application crashes when cycling through the home options  at first launch  [\#1163](https://github.com/olivierkes/manuskript/issues/1163)
+- RuntimeError with manuskriptw.exe \(sys.stderr is None\) [\#1138](https://github.com/olivierkes/manuskript/issues/1138)
+
+**Closed issues:**
+
+- Allow chapter/scene cards to be scrolled [\#1170](https://github.com/olivierkes/manuskript/issues/1170)
+- Kubuntu 20.40.6 getting undefined symbol: krb5\_ser\_context\_init, version krb5\_3\_MIT [\#1155](https://github.com/olivierkes/manuskript/issues/1155)
+
+**Merged pull requests:**
+
+- Bulk Info Manager bug fix and style changes. [\#1144](https://github.com/olivierkes/manuskript/pull/1144) ([tntscreed](https://github.com/tntscreed))
+- I added a feature to add "detailed info" entries to multiple characters simultaneously via a dialog box. [\#1137](https://github.com/olivierkes/manuskript/pull/1137) ([tntscreed](https://github.com/tntscreed))
+- Crash on spellcheck context menu \#1224 [\#1226](https://github.com/olivierkes/manuskript/pull/1226) ([drmousse](https://github.com/drmousse))
+- Update spellchecker.py And Fixed crashing [\#1214](https://github.com/olivierkes/manuskript/pull/1214) ([TheShadowblast123](https://github.com/TheShadowblast123))
+- Fix regex for ignoring multi-line comments. [\#1212](https://github.com/olivierkes/manuskript/pull/1212) ([sagev9000](https://github.com/sagev9000))
+- Skip comments in word count [\#1205](https://github.com/olivierkes/manuskript/pull/1205) ([sagev9000](https://github.com/sagev9000))
+- added extra check for the filebase dir not to start with an . [\#1198](https://github.com/olivierkes/manuskript/pull/1198) ([Niwreg](https://github.com/Niwreg))
+- Fix inconsistent newline handling across operating systems [\#1196](https://github.com/olivierkes/manuskript/pull/1196) ([Dreaded-Gnu](https://github.com/Dreaded-Gnu))
+- Fix manuskriptw startup error [\#1195](https://github.com/olivierkes/manuskript/pull/1195) ([Dreaded-Gnu](https://github.com/Dreaded-Gnu))
+- Simple history back/forward navigation [\#1165](https://github.com/olivierkes/manuskript/pull/1165) ([alfar](https://github.com/alfar))
+
+## [0.15.0](https://github.com/olivierkes/manuskript/tree/0.15.0) (2023-03-04)
+
+[Full Changelog](https://github.com/olivierkes/manuskript/compare/0.14.0...0.15.0)
+
+**Implemented enhancements:**
+
+- Feature request: Development version indicator [\#1126](https://github.com/olivierkes/manuskript/issues/1126)
+
+**Fixed bugs:**
+
+- 0.14 won't open [\#1105](https://github.com/olivierkes/manuskript/issues/1105)
+- click on "Plan" makes Manuskript 0.14.0 crash [\#1094](https://github.com/olivierkes/manuskript/issues/1094)
+- mouse over goes blank in fiction [\#1093](https://github.com/olivierkes/manuskript/issues/1093)
+- Crashes on hitting "+" while editing plot step summary [\#1081](https://github.com/olivierkes/manuskript/issues/1081)
+- Type error on launch [\#1043](https://github.com/olivierkes/manuskript/issues/1043)
+- Plot-step summary disappearing and not being saved! [\#1008](https://github.com/olivierkes/manuskript/issues/1008)
+- Don't open msk from command line [\#993](https://github.com/olivierkes/manuskript/issues/993)
+- Metadata: References [\#756](https://github.com/olivierkes/manuskript/issues/756)
+- Context/right click Menu slow and only in english [\#487](https://github.com/olivierkes/manuskript/issues/487)
+- Translations breaks shortcuts [\#1135](https://github.com/olivierkes/manuskript/issues/1135)
+- Missing visual indicator for collapsables like metadata fields [\#1132](https://github.com/olivierkes/manuskript/issues/1132)
+- New search bug [\#1125](https://github.com/olivierkes/manuskript/issues/1125)
+- One-time glitch: dragged "World" entry to top of list and it disappeared [\#1122](https://github.com/olivierkes/manuskript/issues/1122)
+- Loading Error with fileno [\#1121](https://github.com/olivierkes/manuskript/issues/1121)
+- Search no longer works [\#1095](https://github.com/olivierkes/manuskript/issues/1095)
+- Crash when opening a plot in the cheat sheet containing deleted characters [\#1082](https://github.com/olivierkes/manuskript/issues/1082)
+- CTD Crash To Desktop after "inserting link" [\#1071](https://github.com/olivierkes/manuskript/issues/1071)
+- Spellcheck intermittantly looses location in editor [\#1065](https://github.com/olivierkes/manuskript/issues/1065)
+- Translation - missing lines in .ts file etc. issues [\#1052](https://github.com/olivierkes/manuskript/issues/1052)
+- Debian installer zst compression error [\#1047](https://github.com/olivierkes/manuskript/issues/1047)
+- manuskriptw.exe can not be executed due to unhandled exception "NullWriter" [\#1044](https://github.com/olivierkes/manuskript/issues/1044)
+- Crash when attempting to add an inexistent reference [\#1042](https://github.com/olivierkes/manuskript/issues/1042)
+- Setting the language to German deletes shortcut-functions like "Ctrl+S"  [\#1012](https://github.com/olivierkes/manuskript/issues/1012)
+- Open in new tab doesn't work from tree [\#919](https://github.com/olivierkes/manuskript/issues/919)
+- \[Bug\] Next Button in Characters Pane [\#584](https://github.com/olivierkes/manuskript/issues/584)
+- Top level World items with sub-items do not visually indicate sub-items exist [\#305](https://github.com/olivierkes/manuskript/issues/305)
+- saving error [\#274](https://github.com/olivierkes/manuskript/issues/274)
+- Crashing when creating a new project - locale C [\#130](https://github.com/olivierkes/manuskript/issues/130)
+
+**Closed issues:**
+
+- Adding a clearer discription to contributing guidlines [\#1115](https://github.com/olivierkes/manuskript/issues/1115)
+- I can't click boxes to edit them [\#1104](https://github.com/olivierkes/manuskript/issues/1104)
+- Minor Python error during Installation - Linux Mint 20.3 [\#1097](https://github.com/olivierkes/manuskript/issues/1097)
+- Package as App Bundle for macOS [\#567](https://github.com/olivierkes/manuskript/issues/567)
+- Update files about languages [\#1133](https://github.com/olivierkes/manuskript/issues/1133)
+
+**Merged pull requests:**
+
+- Fix to error  \#1095 [\#1098](https://github.com/olivierkes/manuskript/pull/1098) ([TheShadowOfHassen](https://github.com/TheShadowOfHassen))
+- Add GitHub Actions Windows CI build to commits [\#1092](https://github.com/olivierkes/manuskript/pull/1092) ([MC42](https://github.com/MC42))
+- Resolve "Search" and "Cheat sheet" strings not being translated correctly in source string [\#1091](https://github.com/olivierkes/manuskript/pull/1091) ([MC42](https://github.com/MC42))
+- Feature/split editor functionality [\#1060](https://github.com/olivierkes/manuskript/pull/1060) ([tcsch](https://github.com/tcsch))
+- Create a macOS installer \(fixes \#567\) [\#1056](https://github.com/olivierkes/manuskript/pull/1056) ([marosoft](https://github.com/marosoft))
+- Session target [\#460](https://github.com/olivierkes/manuskript/pull/460) ([nephlm](https://github.com/nephlm))
+
 ## [0.14.0](https://github.com/olivierkes/manuskript/tree/0.14.0) (2022-06-08)
 
 [Full Changelog](https://github.com/olivierkes/manuskript/compare/0.13.1...0.14.0)
@@ -11,33 +175,32 @@
 
 **Fixed bugs:**
 
-- Crashing when I'm trying to create the 1st project [\#1035](https://github.com/olivierkes/manuskript/issues/1035)
 - crash on the "Outline" section [\#1032](https://github.com/olivierkes/manuskript/issues/1032)
 - Manuskript crashing while booting [\#1021](https://github.com/olivierkes/manuskript/issues/1021)
+- Crashing when I'm trying to create the 1st project [\#1035](https://github.com/olivierkes/manuskript/issues/1035)
 - \[Bug\] double click causes crash in outline or plots view [\#1014](https://github.com/olivierkes/manuskript/issues/1014)
 - Re-ordering items in the outline causes data loss/text overwritting [\#1001](https://github.com/olivierkes/manuskript/issues/1001)
 - An unhandled exception has occurred! on cheatsheet [\#994](https://github.com/olivierkes/manuskript/issues/994)
 - Crash when changing index card style [\#992](https://github.com/olivierkes/manuskript/issues/992)
 - Regex search causes crash [\#989](https://github.com/olivierkes/manuskript/issues/989)
 - Crash when project file is open in another application [\#950](https://github.com/olivierkes/manuskript/issues/950)
-- outliner folder gets renamed and contents replaced when dragged over other folder, only in upward direction [\#719](https://github.com/olivierkes/manuskript/issues/719)
 
 **Closed issues:**
 
-- Creating empty language file hr-HR [\#1023](https://github.com/olivierkes/manuskript/issues/1023)
 - Creating project from template dialog has fixed size [\#996](https://github.com/olivierkes/manuskript/issues/996)
+- Creating empty language file hr-HR [\#1023](https://github.com/olivierkes/manuskript/issues/1023)
 - Russian translation [\#990](https://github.com/olivierkes/manuskript/issues/990)
 - \[Windows Version\] Two program windows pop up [\#327](https://github.com/olivierkes/manuskript/issues/327)
 
 **Merged pull requests:**
 
-- catch AttributeError in plotTreeView double click event \(fixes \#1014\) [\#1015](https://github.com/olivierkes/manuskript/pull/1015) ([amconners](https://github.com/amconners))
+- catch AttributeError in plotTreeView double click event \(fixes \#1014\) [\#1015](https://github.com/olivierkes/manuskript/pull/1015) ([PunningLinguist](https://github.com/PunningLinguist))
 - Change welcome page spacer size policy to allow welcome to expand to fill most of screen \(fixes olivierkes\#996\) [\#1007](https://github.com/olivierkes/manuskript/pull/1007) ([jdanielp](https://github.com/jdanielp))
 - Fix crash when files are locked for writing \(Fixes olivierkes\#950\) [\#1004](https://github.com/olivierkes/manuskript/pull/1004) ([jdanielp](https://github.com/jdanielp))
 - Fix crash when regex is not valid \(Fixes olivierkes\#989\) [\#1003](https://github.com/olivierkes/manuskript/pull/1003) ([jdanielp](https://github.com/jdanielp))
 - Potential fix for \#719, \#1001: data loss when reordering items in upward direction [\#1002](https://github.com/olivierkes/manuskript/pull/1002) ([olivierkes](https://github.com/olivierkes))
 - hard\_line\_breaks support [\#1000](https://github.com/olivierkes/manuskript/pull/1000) ([Mte90](https://github.com/Mte90))
-- Fix for \#992 and \#998 [\#999](https://github.com/olivierkes/manuskript/pull/999) ([amconners](https://github.com/amconners))
+- Fix for \#992 and \#998 [\#999](https://github.com/olivierkes/manuskript/pull/999) ([PunningLinguist](https://github.com/PunningLinguist))
 - Write a test for ParseMMDFile function. [\#831](https://github.com/olivierkes/manuskript/pull/831) ([zeth](https://github.com/zeth))
 
 ## [0.13.1](https://github.com/olivierkes/manuskript/tree/0.13.1) (2021-12-13)
@@ -280,7 +443,7 @@
 - Fix Linux Travis CI build error - pyenv: version `3.6.3' not installed [\#610](https://github.com/olivierkes/manuskript/pull/610) ([gedakc](https://github.com/gedakc))
 - Fix crash when setting word Goal on new Text \(scene\) in Outline pane [\#609](https://github.com/olivierkes/manuskript/pull/609) ([gedakc](https://github.com/gedakc))
 - Spelling: Manuscript, could not, process, … No content [\#588](https://github.com/olivierkes/manuskript/pull/588) ([comradekingu](https://github.com/comradekingu))
-- fix issue \#468 'unit' is reset [\#587](https://github.com/olivierkes/manuskript/pull/587) ([NocturnalFred](https://github.com/NocturnalFred))
+- fix issue \#468 'unit' is reset [\#587](https://github.com/olivierkes/manuskript/pull/587) ([SOLIDFred](https://github.com/SOLIDFred))
 - Fix pandoc export crashes is project title is empty [\#585](https://github.com/olivierkes/manuskript/pull/585) ([gedakc](https://github.com/gedakc))
 - Track dirty state and have the UI behave accordingly [\#583](https://github.com/olivierkes/manuskript/pull/583) ([worstje](https://github.com/worstje))
 - Fix crash if invalid character is inserted into the text. [\#578](https://github.com/olivierkes/manuskript/pull/578) ([kakaroto](https://github.com/kakaroto))

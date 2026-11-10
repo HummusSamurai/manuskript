@@ -30,6 +30,7 @@ from manuskript.ui.listDialog import ListDialog
 
 import logging
 LOGGER = logging.getLogger(__name__)
+_parser = ET.XMLParser(huge_tree=True)
 
 try:
     import zlib  # Used with zipfile for compression
@@ -388,7 +389,7 @@ def saveProject(zip=None):
                         filesWithPermissionErrors.append(filename)
                 else:
                     try:
-                        with open(filename, "w", encoding='utf8') as f:
+                        with open(filename, "wt", encoding="utf8", newline="\n") as f:
                             f.write(content)
                     except PermissionError as e:
                         LOGGER.error("Cannot open file " + filename + " for writing: " + e.strerror)
@@ -423,7 +424,7 @@ def saveProject(zip=None):
 
         # Write the project file's content
         try:
-            with open(project, "w", encoding='utf8') as f:
+            with open(project, "wt", encoding="utf8", newline="\n") as f:
                 f.write("1")  # Format number
         except PermissionError as e:
             LOGGER.error("Cannot open file " + project + " for writing: " + e.strerror)
@@ -678,6 +679,9 @@ def loadProject(project, zip=None):
             # Skip directories that begin with a period
             if p[:1] == ".":
                 continue
+            #skip if the basedir of the file starts with an .
+            if os.path.basename(p)[:1] == ".":
+                continue
             for f in filenames:
                 # Skip filenames that begin with a period
                 if f[:1] == ".":
@@ -689,8 +693,12 @@ def loadProject(project, zip=None):
                 else:
                     try:
                         filename = os.path.join(dirpath, f)
-                        with open(filename, "r", encoding="utf8") as fo:
+                        with open(filename, 'rt', encoding="utf8") as fo:
                             files[os.path.join(p, f)] = fo.read()
+
+                    except (UnicodeDecodeError, FileNotFoundError, IsADirectoryError) as e:
+                         LOGGER.error("Ignore file " + filename + " because of the error: " + e.reason)
+                         
                     except PermissionError as e:
                         LOGGER.error("Cannot open file " + filename + ": " + e.strerror)
                         errors.append(fo)
@@ -714,7 +722,7 @@ def loadProject(project, zip=None):
         errors.append("settings.txt")
 
     # Just to be sure
-    settings.saveToZip = zip
+    settings.saveToZip = True if zip else False
     settings.defaultTextType = "md"
 
     ####################################################################################################################
@@ -913,7 +921,7 @@ def loadProject(project, zip=None):
 
     # Adds revisions
     if "revisions.xml" in files:
-        root = ET.fromstring(files["revisions.xml"])
+        root = ET.fromstring(files["revisions.xml"], parser=_parser)
         appendRevisions(mdl, root)
 
     # Check IDS
@@ -964,9 +972,9 @@ def addTextItems(mdl, odict, parent=None):
                 item = outlineFromMMD(odict[k], parent=parent)
                 item._lastPath = odict[k + ":lastPath"]
             except KeyError:
-                LOGGER.error("Failed to add file " + str(k))
+                LOGGER.error(f"Failed to add file {k}")
         else:
-            LOGGER.debug("Strange things in file %s".format(k))
+            LOGGER.debug(f"Strange things in file {k}")
 
 
 def outlineFromMMD(text, parent):
@@ -1127,5 +1135,3 @@ def parseMMDFile(text, asDict=False):
         return md, body
     else:
         return mdd, body
-
-

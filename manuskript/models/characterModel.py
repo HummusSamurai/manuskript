@@ -220,6 +220,17 @@ class characterModel(QAbstractItemModel, searchableModel):
         self.endInsertRows()
 
         mainWindow().updatePersoInfoView()
+    def addCharacterInfo(self, ID, description, value):
+        c = self.getCharacterByID(ID)
+        self.beginInsertRows(c.index(), len(c.infos), len(c.infos))
+        c.infos.append(CharacterInfo(
+            c,
+            description=self.tr(description),
+            value=self.tr(value)
+        ))
+        self.endInsertRows()
+
+        mainWindow().updatePersoInfoView(mainWindow().tblPersoInfos)
 
     def removeCharacterInfo(self, ID):
         c = self.getCharacterByID(ID)
@@ -278,11 +289,11 @@ class Character(searchableItem):
     def index(self, column=0):
         return self._model.indexFromItem(self, column)
 
-    def data(self, column):
+    def data(self, column, role=Qt.DisplayRole):
         if column == "Info":
             return self.infos
         else:
-            return self._data.get(column, None)
+            return self._data.get(column, role)
 
     def assignRandomColor(self):
         """
